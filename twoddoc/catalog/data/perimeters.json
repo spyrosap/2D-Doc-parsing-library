@@ -1,0 +1,10 @@
+{
+  "01": {
+    "label": "Périmètre C40 01",
+    "encoding": "C40"
+  },
+  "0001": {
+    "label": "Périmètre Binaire 0x0001",
+    "encoding": "BINARY"
+  }
+}

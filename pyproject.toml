@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "twoddoc"
+version = "0.1.0"
+description = "Identify, decode, parse and verify French 2D-Doc (ANTS) codes on PDF documents"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Yousign" }]
+keywords = ["2d-doc", "datamatrix", "ants", "eidas", "signature", "verification"]
+
+dependencies = [
+    "pylibdmtx>=0.1.10",   # DataMatrix decode (requires system libdmtx)
+    "pypdfium2>=4.20",     # PDF rasterisation
+    "Pillow>=9.0",
+    "numpy>=1.23",
+    "cryptography>=41.0",  # X.509, ECDSA, DER
+    "pyhanko-certvalidator>=0.26",  # chain build + CRL/OCSP revocation
+    "lxml>=4.9",           # TSL parsing
+    "httpx>=0.24",         # download TSL / certs / CRL / OCSP
+]
+
+[project.optional-dependencies]
+xades = ["signxml>=3.2"]  # optional: verify the TSL's own XAdES signature
+dev = ["pytest>=7.0", "pytest-cov"]
+
+[project.scripts]
+twoddoc = "twoddoc.cli:main"
+
+[project.urls]
+Homepage = "https://ants.gouv.fr/nos-solutions/2d-doc"
+
+[tool.setuptools.packages.find]
+include = ["twoddoc*"]
+
+[tool.setuptools.package-data]
+"twoddoc.catalog" = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

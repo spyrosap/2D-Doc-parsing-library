@@ -1,0 +1,18 @@
+# Documents — keep README only; never commit PDFs (incl. personal samples) or
+# other markdown (specs, plans).
+*.pdf
+*.md
+!README.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+build/
+dist/
+*.egg
+
+# OS / editor
+.DS_Store

@@ -1,0 +1,330 @@
+{
+  "01": {
+    "00": {
+      "date_required": true,
+      "types": [
+        "Factures de fournisseur d’énergie",
+        "Factures de téléphonie"
+      ]
+    },
+    "01": {
+      "date_required": true,
+      "types": [
+        "Factures de fournisseur d’accès internet",
+        "Factures de fournisseur d’eau"
+      ]
+    },
+    "02": {
+      "date_required": true,
+      "types": [
+        "Avis de taxe d’habitation"
+      ]
+    },
+    "03": {
+      "date_required": false,
+      "types": [
+        "Relevé d’identité bancaire."
+      ]
+    },
+    "05": {
+      "date_required": false,
+      "types": [
+        "Relevé d’Identité SEPAmail"
+      ]
+    },
+    "11": {
+      "date_required": true,
+      "types": [
+        "Relevé de compte"
+      ]
+    },
+    "09": {
+      "date_required": true,
+      "types": [
+        "Facture étendue"
+      ]
+    },
+    "19": {
+      "date_required": false,
+      "types": [
+        "Déclarations de dons"
+      ]
+    },
+    "20": {
+      "date_required": false,
+      "types": [
+        "Déclarations de cession de droits sociaux"
+      ]
+    },
+    "21": {
+      "date_required": false,
+      "types": [
+        "Attestation 2041-ASK"
+      ]
+    },
+    "04": {
+      "date_required": false,
+      "types": [
+        "Avis d’impôt sur les revenus"
+      ]
+    },
+    "06": {
+      "date_required": true,
+      "types": [
+        "Bulletin de salaire",
+        "Avis de Situation Déclarative à l'Impôt sur"
+      ]
+    },
+    "18": {
+      "date_required": false,
+      "types": [
+        "Avis de Situation Déclarative à l'Impôt sur"
+      ]
+    },
+    "24": {
+      "date_required": false,
+      "types": []
+    },
+    "10": {
+      "date_required": true,
+      "types": [
+        "Contrat de travail",
+        "Attestation de décision favorable"
+      ]
+    },
+    "15": {
+      "date_required": true,
+      "types": [
+        "Autorisation de Travail – AES Métier en"
+      ]
+    },
+    "25": {
+      "date_required": true,
+      "types": []
+    },
+    "07": {
+      "date_required": true,
+      "types": [
+        "Titre d’identité"
+      ]
+    },
+    "08": {
+      "date_required": true,
+      "types": [
+        "MRZ"
+      ]
+    },
+    "13": {
+      "date_required": true,
+      "types": [
+        "Document étranger"
+      ]
+    },
+    "A0": {
+      "date_required": true,
+      "types": [
+        "Certificat de qualité de l’air"
+      ]
+    },
+    "A7": {
+      "date_required": true,
+      "types": [
+        "Certificat de qualité de l’air (V2)"
+      ]
+    },
+    "14": {
+      "date_required": true,
+      "types": [
+        "Attestation DICEM"
+      ]
+    },
+    "A8": {
+      "date_required": true,
+      "types": [
+        "Certificat de cession électronique"
+      ]
+    },
+    "A1": {
+      "date_required": true,
+      "types": [
+        "Courrier Permis à Points"
+      ]
+    },
+    "AA": {
+      "date_required": true,
+      "types": [
+        "Arrêtés Permis de conduire"
+      ]
+    },
+    "AB": {
+      "date_required": true,
+      "types": [
+        "Relevé d’Information Permis de conduire",
+        "Certificat de réussite à l'Examen du Permis"
+      ]
+    },
+    "AD": {
+      "date_required": true,
+      "types": []
+    },
+    "B0": {
+      "date_required": true,
+      "types": [
+        "Diplôme",
+        "Attestation de Versement de la"
+      ]
+    },
+    "B1": {
+      "date_required": true,
+      "types": []
+    },
+    "A4": {
+      "date_required": true,
+      "types": [
+        "Certificat de décès"
+      ]
+    },
+    "AE": {
+      "date_required": true,
+      "types": [
+        "Certificat de décès V2"
+      ]
+    },
+    "A2": {
+      "date_required": true,
+      "types": [
+        "Carte Mobilité Inclusion (CMI)"
+      ]
+    },
+    "23": {
+      "date_required": true,
+      "types": [
+        "Certificat de Preuve de Vie",
+        "Macaron VTC"
+      ]
+    },
+    "A3": {
+      "date_required": false,
+      "types": [
+        "Carte T3P"
+      ]
+    },
+    "A5": {
+      "date_required": false,
+      "types": []
+    },
+    "A6": {
+      "date_required": false,
+      "types": [
+        "Carte Professionnelle Sapeur-Pompier"
+      ]
+    },
+    "A9": {
+      "date_required": true,
+      "types": [
+        "Permis de chasser"
+      ]
+    },
+    "AC": {
+      "date_required": true,
+      "types": [
+        "Licence de conducteur de train"
+      ]
+    },
+    "12": {
+      "date_required": true,
+      "types": [
+        "Acte d’huissier"
+      ]
+    },
+    "22": {
+      "date_required": false,
+      "types": [
+        "Carte Européenne d’Arme à Feu (CEAF)"
+      ]
+    },
+    "C1": {
+      "date_required": true,
+      "types": [
+        "Renseignement Tarifaire Contraignant"
+      ]
+    },
+    "C2": {
+      "date_required": true,
+      "types": [
+        "Accord Préalable pour le transfert d’armes",
+        "Permis de transfert d’armes à feu"
+      ]
+    },
+    "C3": {
+      "date_required": true,
+      "types": [
+        "Autorisation d’importation de matériels"
+      ]
+    },
+    "C4": {
+      "date_required": true,
+      "types": []
+    },
+    "C5": {
+      "date_required": true,
+      "types": [
+        "Licence d’exportation d’armes à feu",
+        "Agrément de transfert d’armes à feu"
+      ]
+    },
+    "C6": {
+      "date_required": true,
+      "types": []
+    },
+    "C7": {
+      "date_required": true,
+      "types": [
+        "Bon de livraison"
+      ]
+    },
+    "C8": {
+      "date_required": true,
+      "types": [
+        "Bon de livraison V2"
+      ]
+    },
+    "B2": {
+      "date_required": true,
+      "types": [
+        "Test COVID"
+      ]
+    },
+    "L1": {
+      "date_required": true,
+      "types": [
+        "Attestation Vaccinale"
+      ]
+    },
+    "16": {
+      "date_required": false,
+      "types": [
+        "Attestation de Demande d’Asile",
+        "Attestation de fin de droit à l'allocation"
+      ]
+    },
+    "17": {
+      "date_required": true,
+      "types": []
+    },
+    "C9": {
+      "date_required": true,
+      "types": [
+        "Caducée Infirmier"
+      ]
+    }
+  },
+  "0001": {
+    "07": {
+      "date_required": true,
+      "types": [
+        "Titre d’identité (Réservé)"
+      ]
+    }
+  }
+}

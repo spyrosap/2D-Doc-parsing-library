@@ -1,0 +1,3204 @@
+{
+  "01": {
+    "01": {
+      "label": "Identifiant unique du document.",
+      "min": 0,
+      "max": null,
+      "type": "Alphanumérique",
+      "description": "Cet identifiant permet en fonction de l’émetteur (si celui-ci fournit le service) de récupérer le document correspondant. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "02": {
+      "label": "Catégorie de document",
+      "min": 0,
+      "max": null,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "03": {
+      "label": "Sous-catégorie de document",
+      "min": 0,
+      "max": null,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "04": {
+      "label": "Application de composition",
+      "min": 0,
+      "max": null,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "05": {
+      "label": "Version de l’application de composition",
+      "min": 0,
+      "max": null,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "06": {
+      "label": "Date de l’association entre le document et le code 2D-DOC.",
+      "min": 4,
+      "max": 4,
+      "type": "Alphanumérique",
+      "description": "Cette date est indiquée par le nombre de jours encodé en hexadécimal depuis le 1 er janvier 2000 de la même manière que les dates fournies dans l’en-tête.",
+      "kind": "date_days2000"
+    },
+    "07": {
+      "label": "Heure de l’association entre le document et le code 2D-DOC.",
+      "min": 6,
+      "max": 6,
+      "type": "Numérique",
+      "description": "Cette donnée est composée uniquement de 6 chiffres au format HHMMSS où HH représente l’heure, MM les minutes et SS les secondes. Les heures, les minutes et les secondes sont encodées sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "time"
+    },
+    "08": {
+      "label": "Date d’expiration du document",
+      "min": 4,
+      "max": 4,
+      "type": "Alphanumérique",
+      "description": "Cette date est indiquée par le nombre de jours encodé en hexadécimal depuis le 1 er janvier 2000 de la même manière que les dates fournies dans l’en-tête.",
+      "kind": "date_days2000"
+    },
+    "09": {
+      "label": "Nombre de pages du document",
+      "min": 4,
+      "max": 4,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9]. Le nombre devra être préfixé par des 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "0A": {
+      "label": "Editeur du 2D-DOC",
+      "min": 9,
+      "max": 9,
+      "type": "Numérique",
+      "description": "Correspond au numéro de SIREN de l’éditeur, sur 9 caractères numériques.",
+      "kind": "numeric"
+    },
+    "0B": {
+      "label": "Intégrateur du 2D-DOC",
+      "min": 9,
+      "max": 9,
+      "type": "Numérique",
+      "description": "Correspond au numéro de SIREN de l’intégrateur, sur 9 caractères numériques.",
+      "kind": "numeric"
+    },
+    "0C": {
+      "label": "URL du document",
+      "min": 0,
+      "max": null,
+      "type": "Alphanumérique et symboles",
+      "description": "L’URL étant sensible à la casse, il n’est pas possible de réduire cela à l’ensemble des caractères majuscules. Pour permettre le stockage de cette donnée au format C40, l’URL ne subit aucune modification et son encodage UTF-8 est encodé en Base32. Cependant, une URL tronquée n’ayant pas de sens, ce champ ne devra pas être tronqué.",
+      "kind": "base32"
+    },
+    "0D": {
+      "label": "UUID du document",
+      "min": 36,
+      "max": 36,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des caractères hexadécimaux en majuscules [0-9A-F] et des espaces. Les espaces remplacent les ‘-‘ dans l'UUID qui sera restitué au moment de l'affichage.",
+      "kind": "text"
+    },
+    "10": {
+      "label": "Ligne 1 de la norme adresse postale du bénéficiaire de la prestation",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Qualité – Nom – Prénom – éventuellement titre ou profession du bénéficiaire de la prestation. Les items Qualité, Nom et Prénom doivent être indiqués dans cet ordre et peuvent être séparés par le caractère ‘/’ pour faciliter leur lecture. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces et éventuellement des ‘/’ pour séparer les zones Qualité, Nom et Prénom. Dans le cas, d’un nom de société, il n’est pas nécessaire d’utiliser des séparateurs.",
+      "kind": "text"
+    },
+    "11": {
+      "label": "Qualité et/ou titre de la personne bénéficiaire de la prestation",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "12": {
+      "label": "Prénom de la personne bénéficiaire de la prestation",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "13": {
+      "label": "Nom de la personne bénéficiaire de la prestation",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "14": {
+      "label": "Ligne 1 de la norme adresse postale du destinataire de la facture",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Qualité – Nom – Prénom – éventuellement titre ou profession du destinataire de la facture. Les items Qualité, Nom et Prénom doivent être indiqués dans cet ordre et peuvent être séparés par le caractère ‘/’ pour faciliter leur lecture. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces et éventuellement des ‘/’ pour séparer les zones Qualité, Nom et Prénom. Dans le cas, d’un nom de société, il n’est pas nécessaire d’utiliser des séparateurs.",
+      "kind": "text"
+    },
+    "15": {
+      "label": "Qualité et/ou titre de la personne destinataire de la facture",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "16": {
+      "label": "Prénom de la personne destinataire de la facture",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "17": {
+      "label": "Nom de la personne destinataire de la facture",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "18": {
+      "label": "Numéro de la facture",
+      "min": 0,
+      "max": null,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "19": {
+      "label": "Numéro de client",
+      "min": 0,
+      "max": null,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "1A": {
+      "label": "Numéro du contrat",
+      "min": 0,
+      "max": null,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "1B": {
+      "label": "Identifiant du souscripteur du contrat",
+      "min": 0,
+      "max": null,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "1C": {
+      "label": "Date d’effet du contrat",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "1D": {
+      "label": "Montant TTC de la facture",
+      "min": 0,
+      "max": 16,
+      "type": "Numérique",
+      "description": "Le montant est un nombre avec au plus deux décimales et peut être positif ou négatif. Il est encodé en utilisant uniquement des chiffres [0-9], au plus une virgule et au plus un tiret [,-].",
+      "kind": "numeric"
+    },
+    "1E": {
+      "label": "Numéro de téléphone du bénéficiaire de la prestation",
+      "min": 0,
+      "max": 30,
+      "type": "Numérique",
+      "description": "Il est encodé en utilisant uniquement des chiffres [0-9]. Il commence par le code international, par exemple 33177935210 pour encoder le numéro français",
+      "kind": "numeric"
+    },
+    "1F": {
+      "label": "Numéro de téléphone du destinataire de la facture",
+      "min": 0,
+      "max": 30,
+      "type": "Numérique",
+      "description": "Il est encodé en utilisant uniquement des chiffres [0-9]. Il commence par le code international, par exemple 33177935210 pour encoder le numéro français",
+      "kind": "numeric"
+    },
+    "1G": {
+      "label": "Présence d’un co-bénéficiaire de la prestation non mentionné dans le code",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Permet d’indiquer la présence d’un ou plusieurs co-bénéficiaires de la prestation non mentionnés dans le code. Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "1H": {
+      "label": "Présence d’un co-destinataire de la facture non mentionné dans le code",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Permet d’indiquer la présence d’un ou plusieurs co-destinataires de la facture non mentionnés dans le code. Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "1I": {
+      "label": "Ligne 1 de la norme adresse postale du co-bénéficiaire de la prestation.",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Qualité – Nom – Prénom – éventuellement titre ou profession du co-bénéficiaire de la prestation. Les items Qualité, Nom et Prénom doivent être indiqués dans cet ordre et peuvent être séparés par le caractère ‘/’ pour faciliter leur lecture. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces et éventuellement des ‘/’ pour séparer les zones Qualité, Nom et Prénom. Dans le cas, d’un nom de société, il n’est pas nécessaire d’utiliser des séparateurs.",
+      "kind": "text"
+    },
+    "1J": {
+      "label": "Qualité et/ou titre du co-bénéficiaire de la prestation.",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "1K": {
+      "label": "Prénom du co-bénéficiaire de la prestation.",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "1L": {
+      "label": "Nom du co-bénéficiaire de la prestation.",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "1M": {
+      "label": "Ligne 1 de la norme adresse postale du co-destinataire de la facture.",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Qualité – Nom – Prénom – éventuellement titre ou profession du co-destinataire de la facture. Les items Qualité, Nom et Prénom doivent être indiqués dans cet ordre et peuvent être séparés par le caractère ‘/’ pour faciliter leur lecture. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces et éventuellement des ‘/’ pour séparer les zones Qualité, Nom et Prénom. Dans le cas, d’un nom de société, il n’est pas nécessaire d’utiliser des séparateurs.",
+      "kind": "text"
+    },
+    "1N": {
+      "label": "Qualité et/ou titre du co-destinataire de la facture.",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "1O": {
+      "label": "Prénom du co-destinataire de la facture.",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "1P": {
+      "label": "Nom du co-destinataire de la facture.",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "20": {
+      "label": "Ligne 2 de la norme adresse postale du point de service des prestations",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en section 11.2 du document en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "21": {
+      "label": "Ligne 3 de la norme adresse postale du point de service des prestations",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en section 11.2 du document en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "22": {
+      "label": "Ligne 4 de la norme adresse postale du point de service des prestations",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Numéro dans la voie + type et nom de la voie. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en section 11.2 du document en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "23": {
+      "label": "Ligne 5 de la norme adresse postale du point de service des prestations",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Mention de distribution (BP) suivie du libellé de la localité de destination dans le cas où celle-ci serait différente du libellé cedex lieu-dit ou hameau. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en section 11.2 du document en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "24": {
+      "label": "Code postal ou code cedex du point de service des prestations",
+      "min": 5,
+      "max": 5,
+      "type": "Numérique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des chiffres ou des espaces si la donnée n’est pas renseignée (par exemple, dans le cas d’un pays ne disposant pas de code postal).",
+      "kind": "numeric"
+    },
+    "25": {
+      "label": "Localité de destination ou libellé cedex du point de service des prestations",
+      "min": 0,
+      "max": 32,
+      "type": "Numérique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "numeric"
+    },
+    "26": {
+      "label": "Pays de service des prestations",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "27": {
+      "label": "Ligne 2 de la norme adresse postale du destinataire de la facture",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en partie 2 de la norme.",
+      "kind": "text"
+    },
+    "28": {
+      "label": "Ligne 3 de la norme adresse postale du destinataire de la facture",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en section 11.2 du document en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "29": {
+      "label": "Ligne 4 de la norme adresse postale du destinataire de la facture",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Numéro dans la voie + type et nom de la voie. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en section 11.2 du document en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "2A": {
+      "label": "Ligne 5 de la norme adresse postale du destinataire de la facture",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Mention de distribution (BP) suivie du libellé de la localité de destination dans le cas où celle-ci serait différente du libellé cedex lieu-dit ou hameau. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en section 11.2 du document en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "2B": {
+      "label": "Code postal ou code cedex du destinataire de la facture",
+      "min": 5,
+      "max": 5,
+      "type": "Numérique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des chiffres ou des espaces si la donnée n’est pas renseignée (par exemple, dans le cas d’un pays ne disposant pas de code postal).",
+      "kind": "numeric"
+    },
+    "2C": {
+      "label": "Localité de destination ou libellé cedex du destinataire de la facture",
+      "min": 0,
+      "max": 32,
+      "type": "Numérique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "numeric"
+    },
+    "2D": {
+      "label": "Pays du destinataire de la facture",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "30": {
+      "label": "Qualité Nom et Prénom.",
+      "min": 0,
+      "max": 140,
+      "type": "Alphanumérique",
+      "description": "Les items Qualité, Nom et Prénom sont indiqués sans ordre prédéfini. L’utilisation du séparateur ‘/’ est possible ; dans ce cas, l’ordre est obligatoirement Qualité/Nom/Prénom. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] des espaces et éventuellement des ‘/’ pour séparer les zones Qualité, Nom et Prénom. Dans le cas, d’un nom de société, il n’est pas nécessaire d’utiliser des séparateurs.",
+      "kind": "text"
+    },
+    "31": {
+      "label": "Code IBAN",
+      "min": 14,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9] (cf. norme ISO 13616). S’il y a des espaces, ils sont retirés.",
+      "kind": "text"
+    },
+    "32": {
+      "label": "Code BIC/SWIFT",
+      "min": 8,
+      "max": 11,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres (cf. norme ISO 9362). Ce code peut faire 8 ou 11 caractères. Il n’est jamais complété par des caractères.",
+      "kind": "text"
+    },
+    "33": {
+      "label": "Code BBAN",
+      "min": 0,
+      "max": 30,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9]. S’il y a des espaces, ils sont retirés.",
+      "kind": "text"
+    },
+    "34": {
+      "label": "Pays de localisation du compte",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "35": {
+      "label": "Identifiant SEPAmail (QXBAN)",
+      "min": 14,
+      "max": 34,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9] (cf. norme ISO 13616). S’il y a des espaces, ils sont retirés.",
+      "kind": "text"
+    },
+    "36": {
+      "label": "Date de début de période",
+      "min": 4,
+      "max": 4,
+      "type": "Alphanumérique",
+      "description": "Cette donnée correspond au nombre de jours écoulés depuis le 1 er janvier 2000. Elle est encodée en hexadécimal en utilisant uniquement des lettres majuscules non accentuées [A-F] et des chiffres [0-9].",
+      "kind": "date_days2000"
+    },
+    "37": {
+      "label": "Date de fin de période",
+      "min": 4,
+      "max": 4,
+      "type": "Alphanumérique",
+      "description": "Cette donnée correspond au nombre de jours écoulés depuis le 1 er janvier 2000. Elle est encodée en hexadécimal en utilisant uniquement des lettres majuscules non accentuées [A-F] et des chiffres [0-9].",
+      "kind": "date_days2000"
+    },
+    "38": {
+      "label": "Solde compte début de période",
+      "min": 0,
+      "max": 11,
+      "type": "Numérique",
+      "description": "Cette donnée correspond à un solde positif ou négatif. Elle est encodée en utilisant uniquement des chiffres [0-9], des virgules et des tirets [,-].",
+      "kind": "numeric"
+    },
+    "39": {
+      "label": "Solde compte fin de période",
+      "min": 0,
+      "max": 11,
+      "type": "Numérique",
+      "description": "Cette donnée correspond à un solde positif ou négatif. Elle est encodée en utilisant uniquement des chiffres [0-9], des virgules et des tirets [,-].",
+      "kind": "numeric"
+    },
+    "40": {
+      "label": "Numéro fiscal",
+      "min": 13,
+      "max": 13,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9]. S’il y a des espaces, ils sont retirés.",
+      "kind": "numeric"
+    },
+    "41": {
+      "label": "Revenu fiscal de référence",
+      "min": 0,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Cette donnée est un nombre entier et est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "42": {
+      "label": "Situation du foyer",
+      "min": 0,
+      "max": null,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "43": {
+      "label": "Nombre de parts",
+      "min": 1,
+      "max": 5,
+      "type": "Alphanumérique",
+      "description": "Le nombre de parts n’étant pas nécessairement un nombre entier, il est encodé en utilisant uniquement des chiffres [0-9] et le caractère « virgule » avec au plus deux décimales.",
+      "kind": "text"
+    },
+    "44": {
+      "label": "Référence d’avis d’impôt",
+      "min": 13,
+      "max": 13,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9]. S’il y a des espaces, ils sont retirés.",
+      "kind": "text"
+    },
+    "45": {
+      "label": "Année des revenus",
+      "min": 4,
+      "max": 4,
+      "type": "Numérique",
+      "description": "Année des revenus sur laquelle porte l'impôt. Elle est encodée au format AAAA en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "46": {
+      "label": "Déclarant 1",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Nom et Prénom du déclarant 1. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces pour séparer le Nom et le Prénom.",
+      "kind": "text"
+    },
+    "47": {
+      "label": "Numéro fiscal du déclarant 1",
+      "min": 13,
+      "max": 13,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9]. S’il y a des espaces, ils sont retirés.",
+      "kind": "numeric"
+    },
+    "48": {
+      "label": "Déclarant 2",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Nom et Prénom du déclarant 2. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces pour séparer le Nom et le Prénom.",
+      "kind": "text"
+    },
+    "49": {
+      "label": "Numéro fiscal du déclarant 2",
+      "min": 13,
+      "max": 13,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9]. S’il y a des espaces, ils sont retirés.",
+      "kind": "numeric"
+    },
+    "4A": {
+      "label": "Date de mise en recouvrement",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "4B": {
+      "label": "Date de la déclaration",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "4C": {
+      "label": "Date d’enregistrement",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "4D": {
+      "label": "Montant du don (en €)",
+      "min": 0,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Le montant du don est un nombre entier. Cette donnée est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "4E": {
+      "label": "Montant des droits payés (en €)",
+      "min": 0,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Le montant du don est un nombre entier. Cette donnée est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "4F": {
+      "label": "Référence d’enregistrement",
+      "min": 15,
+      "max": 15,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "4G": {
+      "label": "Nom du donataire",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces, et des symboles [-'].",
+      "kind": "text"
+    },
+    "4H": {
+      "label": "Nom(s) du(es) donateur(s)",
+      "min": 0,
+      "max": 77,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces, et des symboles [-'/]. Le caractère '/' peut être utilisé pour séparer le nom des deux donateurs.",
+      "kind": "text"
+    },
+    "4I": {
+      "label": "Montant Taxable (en €)",
+      "min": 0,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Le montant du don est un nombre entier. Cette donnée est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "4J": {
+      "label": "Montant de la cession (en €)",
+      "min": 0,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Le montant du don est un nombre entier. Cette donnée est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "4K": {
+      "label": "Nom du cessionnaire",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces, et des symboles [-‘@].",
+      "kind": "text"
+    },
+    "4L": {
+      "label": "Nom du cédant",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces, et des symboles [-‘@].",
+      "kind": "text"
+    },
+    "4M": {
+      "label": "Taux applicable",
+      "min": 0,
+      "max": 3,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9] et la virgule comme séparateur [,].",
+      "kind": "numeric"
+    },
+    "4N": {
+      "label": "Nom et prénoms du déclarant",
+      "min": 0,
+      "max": 38,
+      "type": "Alphabétique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "4O": {
+      "label": "Adresse du déclarant",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Numéro dans la voie + type et nom de la voie. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en annexe 11 de la norme en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "4P": {
+      "label": "Code postal du déclarant",
+      "min": 5,
+      "max": 5,
+      "type": "Numérique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des chiffres ou des espaces si la donnée n’est pas renseignée (par exemple, dans le cas d’un pays ne disposant pas de code postal).",
+      "kind": "numeric"
+    },
+    "4Q": {
+      "label": "Commune du déclarant",
+      "min": 0,
+      "max": 32,
+      "type": "Alphabétique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "4R": {
+      "label": "SIP gestionnaire",
+      "min": 0,
+      "max": 30,
+      "type": "Alphabétique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "4S": {
+      "label": "Millésime",
+      "min": 4,
+      "max": 4,
+      "type": "Numérique",
+      "description": "L’année concernée. Cette date est composée uniquement de 4 chiffres au format AAAA où AAAA l’année.",
+      "kind": "numeric"
+    },
+    "4T": {
+      "label": "Administration cantonale suisse",
+      "min": 0,
+      "max": 30,
+      "type": "Alphabétique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "4U": {
+      "label": "Dénomination sociale de l’employeur",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "4V": {
+      "label": "Impôt sur le revenu net",
+      "min": 0,
+      "max": 10,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9] qui peuvent être préfixés par le caractère ‘-‘ pour des montants négatifs.",
+      "kind": "numeric"
+    },
+    "4W": {
+      "label": "Reste à payer",
+      "min": 0,
+      "max": 10,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9] qui peuvent être préfixés par le caractère ‘-‘ pour des montants négatifs.",
+      "kind": "numeric"
+    },
+    "4X": {
+      "label": "Retenue à la source",
+      "min": 0,
+      "max": 10,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "50": {
+      "label": "SIRET de l’employeur",
+      "min": 14,
+      "max": 14,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "51": {
+      "label": "Nombre d’heures travaillées",
+      "min": 6,
+      "max": 6,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres et une virgule [0-9,].",
+      "kind": "numeric"
+    },
+    "52": {
+      "label": "Cumul du nombre d’heures travaillées",
+      "min": 7,
+      "max": 7,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres et une virgule [0-9,].",
+      "kind": "numeric"
+    },
+    "53": {
+      "label": "Début de période",
+      "min": 4,
+      "max": 4,
+      "type": "Alphanumérique",
+      "description": "Cette donnée correspond au nombre de jours écoulés depuis le 1er janvier 2000. Elle est encodée en hexadécimal en utilisant uniquement des lettres majuscules non accentuées [A-F] et des chiffres [0-9].",
+      "kind": "date_days2000"
+    },
+    "54": {
+      "label": "Fin de période",
+      "min": 4,
+      "max": 4,
+      "type": "Alphanumérique",
+      "description": "Cette donnée correspond au nombre de jours écoulés depuis le 1er janvier 2000. Elle est encodée en hexadécimal en utilisant uniquement des lettres majuscules non accentuées [A-F] et des chiffres [0-9].",
+      "kind": "date_days2000"
+    },
+    "55": {
+      "label": "Date de début de contrat",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "56": {
+      "label": "Date de fin de contrat",
+      "min": 4,
+      "max": 4,
+      "type": "Alphanumérique",
+      "description": "Cette donnée correspond au nombre de jours écoulés depuis le 1er janvier 2000. Elle est encodée en hexadécimal en utilisant uniquement des lettres majuscules non accentuées [A-F] et des chiffres [0-9].",
+      "kind": "date_days2000"
+    },
+    "57": {
+      "label": "Date de signature du contrat",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "58": {
+      "label": "Salaire net imposable",
+      "min": 0,
+      "max": 11,
+      "type": "Numérique",
+      "description": "Cette donnée est un nombre positif ou négatif. Elle est encodée en utilisant uniquement des chiffres [0-9], au plus une virgule et au plus un tiret [,-].",
+      "kind": "numeric"
+    },
+    "59": {
+      "label": "Cumul du salaire net imposable",
+      "min": 0,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Cette donnée est un nombre positif ou négatif. Elle est encodée en utilisant uniquement des chiffres [0-9], au plus une virgule et au plus un tiret [,-].",
+      "kind": "numeric"
+    },
+    "5A": {
+      "label": "Salaire brut du mois",
+      "min": 0,
+      "max": 11,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres et une virgule [0-9,].",
+      "kind": "numeric"
+    },
+    "5B": {
+      "label": "Cumul du salaire brut",
+      "min": 0,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres et une virgule [0-9,].",
+      "kind": "numeric"
+    },
+    "5C": {
+      "label": "Salaire net",
+      "min": 0,
+      "max": 11,
+      "type": "Numérique",
+      "description": "Cette donnée est un nombre positif ou négatif. Elle est encodée en utilisant uniquement des chiffres [0-9], au plus une virgule et au plus un tiret [,-].",
+      "kind": "numeric"
+    },
+    "5D": {
+      "label": "Ligne 2 de la norme adresse postale de l’employeur",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en section 11.2 du document en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "5E": {
+      "label": "Ligne 3 de la norme adresse postale de l’employeur",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en section 11.2 du document en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "5F": {
+      "label": "Ligne 4 de la norme adresse postale de l’employeur",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Numéro dans la voie + type et nom de la voie. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en section 11.2 du document en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "5G": {
+      "label": "Ligne 5 de la norme adresse postale de l’employeur",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Mention de distribution (BP) suivie du libellé de la localité de destination dans le cas où celle-ci serait différente du libellé cedex lieu-dit ou hameau. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en section 11.2 du document en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "5H": {
+      "label": "Code postal ou code cedex de l’employeur",
+      "min": 5,
+      "max": 5,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres ou des espaces si la donnée n’est pas renseignée (par exemple, dans le cas d’un pays ne disposant pas de code postal).",
+      "kind": "numeric"
+    },
+    "5I": {
+      "label": "Localité de destination ou libellé cedex de l’employeur",
+      "min": 0,
+      "max": 32,
+      "type": "Alphanumérique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "5J": {
+      "label": "Pays de l’employeur",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "5K": {
+      "label": "Identifiant Cotisant Prestations Sociales",
+      "min": 0,
+      "max": 50,
+      "type": "Alphanumérique",
+      "description": "Correspond en France au numéro URSSAF, au format de 18 chiffres.",
+      "kind": "text"
+    },
+    "5L": {
+      "label": "Numéro de SIRET ou RNA",
+      "min": 9,
+      "max": 14,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "5M": {
+      "label": "Dénomination sociale",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "5N": {
+      "label": "Numéro de dossier d'autorisation de travail",
+      "min": 21,
+      "max": 21,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "5O": {
+      "label": "Nom de l'employeur",
+      "min": 0,
+      "max": 38,
+      "type": "Alphabétique",
+      "description": "Cette donnée est encodée en utilisant des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "5P": {
+      "label": "Prénom de l'employeur",
+      "min": 0,
+      "max": 20,
+      "type": "Alphabétique",
+      "description": "Cette donnée est encodée en utilisant des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "5Q": {
+      "label": "Nom du déclarant",
+      "min": 0,
+      "max": 38,
+      "type": "Alphabétique",
+      "description": "Cette donnée est encodée en utilisant des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "5R": {
+      "label": "Prénom du déclarant",
+      "min": 0,
+      "max": 20,
+      "type": "Alphabétique",
+      "description": "Cette donnée est encodée en utilisant des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "5S": {
+      "label": "Fonction du déclarant",
+      "min": 0,
+      "max": 40,
+      "type": "Alphabétique",
+      "description": "Cette donnée est encodée en utilisant des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "5T": {
+      "label": "Type de contrat de travail",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Le type est encodé de la manière suivante : Encodage Signification 0             CDD 1             CDI 2             CTT 3             CAP",
+      "kind": "numeric"
+    },
+    "5U": {
+      "label": "Durée du contrat",
+      "min": 0,
+      "max": 12,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "60": {
+      "label": "Liste des prénoms",
+      "min": 0,
+      "max": 60,
+      "type": "Alphanumérique",
+      "description": "Les prénoms composés sont séparés par un espace. Les différents prénoms sont séparés par ‘/’. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des espaces et des ‘/’ s’il y a plusieurs prénoms (au maximum 6).",
+      "kind": "text"
+    },
+    "61": {
+      "label": "Prénom",
+      "min": 0,
+      "max": 20,
+      "type": "Alphanumérique",
+      "description": "Ce champ correspond au premier prénom de l’état civil ou au prénom d’usage. Les prénoms composés sont séparés par un espace. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "62": {
+      "label": "Nom patronymique",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "63": {
+      "label": "Nom d’usage",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "64": {
+      "label": "Nom d’épouse/époux",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "65": {
+      "label": "Type de pièce d’identité",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Carte d’identité (ID), titre de séjour (IR), visa (V), permis de conduire (D), passeport (P). Une lettre supplémentaire peut être ajoutée à la discrétion de l’Etat pour les passeports (selon leur type) et pour les visas",
+      "kind": "text"
+    },
+    "66": {
+      "label": "Numéro de la pièce d’identité",
+      "min": 0,
+      "max": 20,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "67": {
+      "label": "Nationalité",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "68": {
+      "label": "Genre",
+      "min": 1,
+      "max": 1,
+      "type": "Alphanumérique",
+      "description": "Genre masculin (M) ou féminin (F).",
+      "kind": "text"
+    },
+    "69": {
+      "label": "Date de naissance",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire. Lorsque le jour ou le jour et le mois ne sont pas connus, leurs valeurs sont remplacées par 00.",
+      "kind": "numeric"
+    },
+    "6A": {
+      "label": "Lieu de naissance",
+      "min": 0,
+      "max": 32,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "6B": {
+      "label": "Département du bureau émetteur",
+      "min": 3,
+      "max": 3,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "6C": {
+      "label": "Pays de naissance",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "6D": {
+      "label": "Nom et prénom du père",
+      "min": 0,
+      "max": 60,
+      "type": "Alphanumérique",
+      "description": "Les items Nom et Prénom doivent être indiqués dans cet ordre et peuvent être séparés par le caractère ‘/’ pour faciliter leur lecture. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces et éventuellement des ‘/’ pour séparer les zones Nom et Prénom.",
+      "kind": "text"
+    },
+    "6E": {
+      "label": "Nom et prénom de la mère",
+      "min": 0,
+      "max": 60,
+      "type": "Alphanumérique",
+      "description": "Les items Nom et Prénom doivent être indiqués dans cet ordre et peuvent être séparés par le caractère ‘/’ pour faciliter leur lecture. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces et éventuellement des ‘/’ pour séparer les zones Nom et Prénom.",
+      "kind": "text"
+    },
+    "6F": {
+      "label": "Machine Readable Zone (Zone de Lecture Automatique, ZLA)",
+      "min": 0,
+      "max": 90,
+      "type": "Alphanumérique",
+      "description": "< pour séparer les champs mais encodé en C40 comme un espace. Cette donnée est encodée en utilisant des majuscules non accentuées, des chiffres et des espaces [A- Z0-9 ].",
+      "kind": "text"
+    },
+    "6G": {
+      "label": "Nom",
+      "min": 1,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "6H": {
+      "label": "Civilité",
+      "min": 1,
+      "max": 10,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "6I": {
+      "label": "Pays émetteur",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "6J": {
+      "label": "Type de document étranger",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Trois choix sont possibles : Encodage Signification 1    Attestation de dépôt d'une demande de titre de séjour 2    Attestation de prolongation d'instruction d'une demande de titre de séjour 3    Attestation favorable de décision d'une demande de titre de séjour 4    Attestation de dépôt d’un document de circulation pour étranger mineur 5    Document de circulation pour étranger mineur",
+      "kind": "numeric"
+    },
+    "6K": {
+      "label": "Numéro de la demande de document étranger",
+      "min": 19,
+      "max": 19,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "6L": {
+      "label": "Date de dépôt de la demande",
+      "min": 8,
+      "max": 8,
+      "type": "Alphanumérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "text"
+    },
+    "6M": {
+      "label": "Catégorie du titre",
+      "min": 0,
+      "max": 40,
+      "type": "Alphabétique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "6N": {
+      "label": "Date de début de validité",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "6O": {
+      "label": "Date de fin de validité",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "6P": {
+      "label": "Autorisation",
+      "min": 0,
+      "max": 40,
+      "type": "Alphabétique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "6Q": {
+      "label": "Numéro d’étranger",
+      "min": 0,
+      "max": 10,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "6R": {
+      "label": "Numéro de visa",
+      "min": 12,
+      "max": 12,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "6S": {
+      "label": "Ligne 2 de l'adresse postale du domicile",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en annexe 11 de la norme en cas de dépassement de la donnée",
+      "kind": "text"
+    },
+    "6T": {
+      "label": "Ligne 3 de l'adresse postale du domicile",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en annexe 11 de la norme en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "6U": {
+      "label": "Ligne 4 de l'adresse postale du domicile",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Numéro dans la voie + type et nom de la voie. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en annexe 11 de la norme en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "6V": {
+      "label": "Ligne 5 de l'adresse postale du domicile",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Mention de distribution (BP) suivie du libellé de la localité de destination dans le cas où celle-ci serait différente du libellé cedex lieu-dit ou hameau. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en annexe 11 de la norme en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "6W": {
+      "label": "Code postal ou code cedex de l'adresse postale du domicile",
+      "min": 5,
+      "max": 5,
+      "type": "Numérique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des chiffres ou des espaces si la donnée n’est pas renseignée (par exemple, dans le cas d’un pays ne disposant pas de code postal).",
+      "kind": "numeric"
+    },
+    "6X": {
+      "label": "Commune de l'adresse postale du domicile",
+      "min": 0,
+      "max": 32,
+      "type": "Alphabétique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "6Y": {
+      "label": "Code pays de l'adresse postale du domicile",
+      "min": 2,
+      "max": 2,
+      "type": "Alphabétique",
+      "description": "Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "6Z": {
+      "label": "Numéro d'étranger de l'autorisation de travail",
+      "min": 9,
+      "max": 11,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "70": {
+      "label": "Date et heure du décès",
+      "min": 12,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 12 chiffres au format JJMMAAAAHHmm où JJ représente le jour dans le mois, MM le mois, AAAA l’année, HH l’heure et mm les minutes. Le jour, le numéro du mois, l’heure et les minutes sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "71": {
+      "label": "Date et heure du constat de décès",
+      "min": 12,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 12 chiffres au format JJMMAAAAHHmm où JJ représente le jour dans le mois, MM le mois, AAAA l’année, HH l’heure et mm les minutes. Le jour, le numéro du mois, l’heure et les minutes sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "72": {
+      "label": "Nom du défunt",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "73": {
+      "label": "Prénoms du défunt",
+      "min": 0,
+      "max": 60,
+      "type": "Alphanumérique",
+      "description": "Les prénoms composés sont séparés par un espace. Les différents prénoms sont séparés par ‘/’. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des espaces et des ‘/’ s’il y a plusieurs prénoms (au maximum 6).",
+      "kind": "text"
+    },
+    "74": {
+      "label": "Nom de jeune fille du défunt",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "75": {
+      "label": "Date de naissance du défunt",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire. Lorsque le jour ou le jour et le mois ne sont pas connus, leurs valeurs sont remplacées par 00.",
+      "kind": "numeric"
+    },
+    "76": {
+      "label": "Genre du défunt",
+      "min": 1,
+      "max": 1,
+      "type": "Alphanumérique",
+      "description": "Genre masculin (M) ou féminin (F).",
+      "kind": "text"
+    },
+    "77": {
+      "label": "Commune de décès",
+      "min": 0,
+      "max": 45,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "78": {
+      "label": "Code postal de la commune de décès",
+      "min": 5,
+      "max": 5,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres ou des espaces si la donnée n’est pas renseignée (par exemple, dans le cas d’un pays ne disposant pas de code postal).",
+      "kind": "numeric"
+    },
+    "79": {
+      "label": "Adresse du domicile du défunt",
+      "min": 0,
+      "max": 114,
+      "type": "Alphanumérique",
+      "description": "Ce champ peut contenir plusieurs lignes d’adresse. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "7A": {
+      "label": "Code postal du domicile du défunt",
+      "min": 5,
+      "max": 5,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres ou des espaces si la donnée n’est pas renseignée (par exemple, dans le cas d’un pays ne disposant pas de code postal).",
+      "kind": "numeric"
+    },
+    "7B": {
+      "label": "Commune du domicile du défunt",
+      "min": 0,
+      "max": 45,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "7C": {
+      "label": "Obstacle médico-légal",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "7D": {
+      "label": "Mise en bière",
+      "min": 1,
+      "max": 1,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est représentée par un caractère : O = Pas de mise en bière, S = Mise en bière dans un cercueil simple, H = Mise en bière dans un cercueil hermétique.",
+      "kind": "text"
+    },
+    "7E": {
+      "label": "Obstacle aux soins de conservation",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "7F": {
+      "label": "Obstacle aux dons du corps",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "7G": {
+      "label": "Recherche de la cause du décès",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "7H": {
+      "label": "Délai de transport du corps",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "L’entier correspondant à cette donnée est encodée en hexadécimal préfixé par des 0 si nécessaire. Cette donnée est encodée en utilisant [0-9A-F].",
+      "kind": "text"
+    },
+    "7I": {
+      "label": "Prothèse avec pile",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "7J": {
+      "label": "Retrait de la pile de prothèse",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "7K": {
+      "label": "Code NNC",
+      "min": 13,
+      "max": 13,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "7L": {
+      "label": "Code FINESS de l'organisme agréé",
+      "min": 9,
+      "max": 9,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "7M": {
+      "label": "Identification du médecin",
+      "min": 0,
+      "max": 64,
+      "type": "Alphanumérique",
+      "description": "Cette donnée contient soit un nom/prénom de médecin, soit un code d’identification du médecin. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "7N": {
+      "label": "Lieu de validation du certificat de décès",
+      "min": 0,
+      "max": 128,
+      "type": "Alphanumérique",
+      "description": "Cette donnée contient la localisation de la signature du certificat de décès dont le format est variable : par exemple une adresse complète, un nom de commune, un nom d’établissement, etc. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "7O": {
+      "label": "Certificat de décès supplémentaire",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée indique si une copie du certificat de décès a été fournie. Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "7P": {
+      "label": "Identifiant du certificat",
+      "min": 16,
+      "max": 16,
+      "type": "Alphanumérique",
+      "description": "Identifiant du certificat de décès. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "87": {
+      "label": "Assuré - Nom patronymique",
+      "min": 0,
+      "max": 63,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "88": {
+      "label": "Assuré - Identifiant",
+      "min": 5,
+      "max": 10,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "89": {
+      "label": "Assuré - Email",
+      "min": 1,
+      "max": 64,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], le caractère tiret ‘-‘, le caractère point ’.’, et le caractère arobase ‘@’.",
+      "kind": "text"
+    },
+    "8A": {
+      "label": "Assuré – Date de début de campagne",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "8B": {
+      "label": "Assuré – Identifiant enquête MCE",
+      "min": 5,
+      "max": 10,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "8C": {
+      "label": "Vie – Identifiant du certificat d’existence",
+      "min": 0,
+      "max": 10,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "8D": {
+      "label": "Vie – Date émission certificat",
+      "min": 14,
+      "max": 14,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 14 chiffres au format JJMMAAAAHHmmss où JJ représente le jour dans le mois, MM le mois, AAAA l’année, HH l’heure, mm les minutes et ss les secondes. Le jour, le numéro du mois, l’heure, les minutes et les secondes sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "time"
+    },
+    "8E": {
+      "label": "SMR – Indicateur remarié",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "8F": {
+      "label": "SMR – Indicateur non remarié",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "8G": {
+      "label": "SMR – Indicateur concubinage",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "8H": {
+      "label": "SMR – Indicateur PACS",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "8I": {
+      "label": "SMR – Date de mise en concubinage",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire. Lorsque le jour ou le jour et le mois ne sont pas connus, leurs valeurs sont remplacées par 00.",
+      "kind": "numeric"
+    },
+    "8J": {
+      "label": "Contact – Indicateur de dématérialisation",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée est représentée par un numérique : 0 = faux et 1 = vrai.",
+      "kind": "numeric"
+    },
+    "8K": {
+      "label": "Contact - Email",
+      "min": 1,
+      "max": 64,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], le caractère tiret ‘-‘, le caractère point ’.’, et le caractère arobase ‘@’.",
+      "kind": "text"
+    },
+    "80": {
+      "label": "Nom",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "81": {
+      "label": "Prénoms",
+      "min": 0,
+      "max": 60,
+      "type": "Alphanumérique",
+      "description": "Les prénoms composés sont séparés par un espace. Les différents prénoms sont séparés par ‘/’. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des espaces et des ‘/’ s’il y a plusieurs prénoms (au maximum 6).",
+      "kind": "text"
+    },
+    "82": {
+      "label": "Numéro de carte",
+      "min": 0,
+      "max": 20,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "83": {
+      "label": "Organisme de tutelle",
+      "min": 0,
+      "max": 40,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "84": {
+      "label": "Profession",
+      "min": 0,
+      "max": 40,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "85": {
+      "label": "Numéro de permis de chasser",
+      "min": 17,
+      "max": 17,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des caractères ‘-‘. Le numéro du permis est de la forme XXXXXXXXXXXX-XX-X.",
+      "kind": "text"
+    },
+    "86": {
+      "label": "Numéro de licence",
+      "min": 12,
+      "max": 12,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "90": {
+      "label": "Identité de l'huissier de justice",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "L’Identité est séparée en Civilité (ou Titre), le Nom et le Prénom. Les éléments Civilité, Nom et Prénom doivent être indiqués dans cet ordre et peuvent être séparés par le caractère ‘/’ pour faciliter leur lecture. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des espaces et éventuellement des ‘/’ pour séparer les zones Civilité, Nom et Prénom.",
+      "kind": "text"
+    },
+    "91": {
+      "label": "Identité ou raison sociale du demandeur",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "L’Identité est séparée en Civilité, le Nom et le Prénom. Les éléments Civilité, Nom et Prénom doivent être indiqués dans cet ordre et peuvent être séparés par le caractère ‘/’ pour faciliter leur lecture. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des espaces et éventuellement des ‘/’ pour séparer les zones Civilité, Nom et Prénom. Dans le cas d’un nom de société, il n’est pas nécessaire d’utiliser des séparateurs.",
+      "kind": "text"
+    },
+    "92": {
+      "label": "Identité ou raison sociale du destinataire",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "L’Identité est séparée en Civilité, le Nom et le Prénom. Les éléments Civilité, Nom et Prénom doivent être indiqués dans cet ordre et peuvent être séparés par le caractère ‘/’ pour faciliter leur lecture. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des espaces et éventuellement des ‘/’ pour séparer les zones Civilité, Nom et Prénom. Dans le cas d’un nom de société, il n’est pas nécessaire d’utiliser des séparateurs.",
+      "kind": "text"
+    },
+    "93": {
+      "label": "Identité ou raison sociale de tiers concerné",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "L’Identité est séparée en Civilité, le Nom et le Prénom. Les éléments Civilité, Nom et Prénom doivent être indiqués dans cet ordre et peuvent être séparés par le caractère ‘/’ pour faciliter leur lecture. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des espaces et éventuellement des ‘/’ pour séparer les zones Civilité, Nom et Prénom. Dans le cas d’un nom de société, il n’est pas nécessaire d’utiliser des séparateurs.",
+      "kind": "text"
+    },
+    "94": {
+      "label": "Intitulé de l'acte",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces.",
+      "kind": "text"
+    },
+    "95": {
+      "label": "Numéro de l'acte",
+      "min": 0,
+      "max": 18,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "96": {
+      "label": "Date de signature de l'acte",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année.",
+      "kind": "numeric"
+    },
+    "A0": {
+      "label": "Pays ayant émis l’immatriculation du véhicule.",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "A1": {
+      "label": "Immatriculation du véhicule",
+      "min": 0,
+      "max": 17,
+      "type": "Alphanumérique",
+      "description": "Cette donnée correspond au champ A du certificat d’immatriculation. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces ou des tirets ‘-‘.",
+      "kind": "text"
+    },
+    "A2": {
+      "label": "Marque du véhicule.",
+      "min": 0,
+      "max": 17,
+      "type": "Alphanumérique",
+      "description": "Cette donnée correspond au champ D.1 du certificat d’immatriculation. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] ou des espaces.",
+      "kind": "text"
+    },
+    "A3": {
+      "label": "Nom commercial du véhicule.",
+      "min": 0,
+      "max": 17,
+      "type": "Alphanumérique",
+      "description": "Cette donnée correspond au champ D.3 du certificat d’immatriculation. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] ou des espaces.",
+      "kind": "text"
+    },
+    "A4": {
+      "label": "Numéro de série du véhicule (VIN).",
+      "min": 17,
+      "max": 17,
+      "type": "Alphanumérique",
+      "description": "Cette donnée correspond au champ E du certificat d’immatriculation. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9]. Des espaces peuvent être utilisés pour suffixer les numéros de série ayant une taille inférieure à la taille du champ.",
+      "kind": "text"
+    },
+    "A5": {
+      "label": "Catégorie du véhicule.",
+      "min": 3,
+      "max": 3,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est extraite du champ J du certificat d’immatriculation. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "A6": {
+      "label": "Carburant.",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est extraite du champ P.3 du certificat d’immatriculation. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "A7": {
+      "label": "Taux d’émission de CO2 du véhicule (en g/km).",
+      "min": 3,
+      "max": 3,
+      "type": "Alphanumérique",
+      "description": "Cette donnée correspond au champ V.7 du certificat d’immatriculation. L’entier correspondant à cette donnée est encodée en hexadécimal préfixé par des 0 si nécessaire. Cette donnée est encodée en utilisant [0-9A-F].",
+      "kind": "text"
+    },
+    "A8": {
+      "label": "Indication de la classe environnementale de réception CE.",
+      "min": 0,
+      "max": 12,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est extraite du champ V.9 du certificat d’immatriculation. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces et des barres obliques ‘/’.",
+      "kind": "text"
+    },
+    "A9": {
+      "label": "Classe d’émission polluante.",
+      "min": 3,
+      "max": 3,
+      "type": "Alphanumérique",
+      "description": "Le champ classe d’émission polluante contient un agrégat de 3 valeurs chacune encodée sur un caractère alphanumérique majuscules sans accents dans l’ordre suivant : Le premier caractère indique la version de la spécification concernant la classe d’émission polluante. Actuellement, deux versions sont définies et autorisées : la version initiale à 0 et la version 1 (pouvant être utilisé dans le certificat de qualité de l’air v2). Le second caractère indique la classe du véhicule lui-même Le troisième caractère indique le motif de sur-classement du véhicule. Pour la version initiale, les valeurs possibles pour la classe du véhicule (du moins polluant au plus polluant) sont les suivantes : Encodage        Signification E       Véhicule électrique 1       Classe 1 2       Classe 2 3       Classe 3 4       Classe 4 5       Classe 5 6       Classe 6 La version initiale ne définit aucun motif de sur-classement du véhicule, donc la seule valeur autorisée est 0 indiquant l’absence de motif. Dans le cadre de la version 1, seule la valeur autorisée est 0 également, mais le motif de sur-classement doit être précisé dans un champ supplémentaire dont l’ID est AM.",
+      "kind": "text"
+    },
+    "AA": {
+      "label": "Date de première immatriculation du véhicule.",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette donnée correspond au champ B du certificat d’immatriculation. Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "AB": {
+      "label": "Type de lettre",
+      "min": 0,
+      "max": 8,
+      "type": "Alphanumérique",
+      "description": "Caractères autorisés (A-Z0-9)",
+      "kind": "text"
+    },
+    "AC": {
+      "label": "N° Dossier",
+      "min": 0,
+      "max": 19,
+      "type": "Alphanumérique",
+      "description": "Caractères autorisés (A-Z0-9)",
+      "kind": "text"
+    },
+    "AD": {
+      "label": "Date Infraction",
+      "min": 4,
+      "max": 4,
+      "type": "Alphanumérique",
+      "description": "Date de l’infraction (nombre de jours après le 01/01/2000 encodée en hexadécimal).",
+      "kind": "date_days2000"
+    },
+    "AE": {
+      "label": "Heure de l’infraction",
+      "min": 4,
+      "max": 4,
+      "type": "Numérique",
+      "description": "Heure au format HHmm éventuellement préfixé par des 0.",
+      "kind": "numeric"
+    },
+    "AF": {
+      "label": "Nombre de points retirés lors de l’infraction",
+      "min": 1,
+      "max": 1,
+      "type": "Alphanumérique",
+      "description": "Valeur entre 0 à 35 points. Encodée en base 36 (0-9A-Z)",
+      "kind": "text"
+    },
+    "AG": {
+      "label": "Solde de points",
+      "min": 1,
+      "max": 1,
+      "type": "Alphanumérique",
+      "description": "Valeur entre 0 à 35 points. Encodée en base 36 (0-9A-Z)",
+      "kind": "text"
+    },
+    "AH": {
+      "label": "Numéro de la carte",
+      "min": 0,
+      "max": 30,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "AI": {
+      "label": "Date d’expiration initiale",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "AJ": {
+      "label": "Numéro EVTC",
+      "min": 13,
+      "max": 13,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "AK": {
+      "label": "Numéro de macaron",
+      "min": 7,
+      "max": 7,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9]. La valeur numérique est préfixée par des 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "AL": {
+      "label": "Numéro de la carte",
+      "min": 11,
+      "max": 11,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "AM": {
+      "label": "Motif de sur-classement",
+      "min": 0,
+      "max": 5,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Lorsque ce champ est présent mais vide, cela signifie qu’il n’y a aucun motif de sur-classement.",
+      "kind": "text"
+    },
+    "AN": {
+      "label": "Kilométrage",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9]. La valeur numérique est préfixée par des 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "AO": {
+      "label": "Numéro d’identification",
+      "min": 6,
+      "max": 6,
+      "type": "Numérique",
+      "description": "L’entier correspondant à cette donnée est encodée en décimal préfixé par des 0 si nécessaire. Cette donnée est encodée en utilisant [0-9].",
+      "kind": "numeric"
+    },
+    "AP": {
+      "label": "Type d’engin",
+      "min": 0,
+      "max": 60,
+      "type": "Alphabétique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "AQ": {
+      "label": "Numéro de série",
+      "min": 0,
+      "max": 25,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "AR": {
+      "label": "Modèle",
+      "min": 0,
+      "max": 35,
+      "type": "Alphabétique",
+      "description": "Cette donnée est encodée en utilisant des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "AS": {
+      "label": "Couleur dominante",
+      "min": 0,
+      "max": 10,
+      "type": "Alphabétique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "AT": {
+      "label": "Type de propriétaire",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Deux choix sont possibles : • 1 = Personne physique • 2 = Personne morale",
+      "kind": "numeric"
+    },
+    "AU": {
+      "label": "Ligne 2 de l'adresse postale du propriétaire",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en annexe 11 de la norme en cas de dépassement de la donnée",
+      "kind": "text"
+    },
+    "AV": {
+      "label": "Ligne 3 de l'adresse postale du propriétaire",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en annexe 11 de la norme en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "AW": {
+      "label": "Ligne 4 de l'adresse postale du propriétaire",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Numéro dans la voie + type et nom de la voie. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en annexe 11 de la norme en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "AX": {
+      "label": "Ligne 5 de l'adresse postale du propriétaire",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Mention de distribution (BP) suivie du libellé de la localité de destination dans le cas où celle-ci serait différente du libellé cedex lieu-dit ou hameau. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en annexe 11 de la norme en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "AY": {
+      "label": "Code postal ou code cedex de l'adresse postale du propriétaire",
+      "min": 5,
+      "max": 5,
+      "type": "Numérique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des chiffres ou des espaces si la donnée n’est pas renseignée (par exemple, dans le cas d’un pays ne disposant pas de code postal).",
+      "kind": "numeric"
+    },
+    "AZ": {
+      "label": "Commune de l'adresse postale du propriétaire",
+      "min": 0,
+      "max": 32,
+      "type": "Alphabétique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "B0": {
+      "label": "Liste des prénoms",
+      "min": 0,
+      "max": 60,
+      "type": "Alphanumérique",
+      "description": "Les prénoms composés sont séparés par un espace. Les différents prénoms sont séparés par '/'. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des espaces et des '/' s'il y a plusieurs prénoms (au maximum 6).",
+      "kind": "text"
+    },
+    "B1": {
+      "label": "Prénom",
+      "min": 0,
+      "max": 20,
+      "type": "Alphanumérique",
+      "description": "Ce champ correspond au premier prénom de l'état civil ou au prénom d'usage. Les prénoms composés sont séparés par un espace. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "B2": {
+      "label": "Nom patronymique",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "B3": {
+      "label": "Nom d'usage",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "B4": {
+      "label": "Nom d'épouse/époux",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "B5": {
+      "label": "Nationalité",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "B6": {
+      "label": "Genre",
+      "min": 1,
+      "max": 1,
+      "type": "Alphanumérique",
+      "description": "Genre masculin (M) ou féminin (F) ou autre (X).",
+      "kind": "text"
+    },
+    "B7": {
+      "label": "Date de naissance",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l'année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire. Lorsque le jour ou le jour et le mois ne sont pas connus, leurs valeurs sont remplacées par 00.",
+      "kind": "numeric"
+    },
+    "B8": {
+      "label": "Lieu de naissance",
+      "min": 0,
+      "max": 32,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "B9": {
+      "label": "Pays de naissance",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "BA": {
+      "label": "Mention obtenue",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "0 aucune 1 Passable 2 Assez Bien 3 Bien 4 Très Bien 5 Très Honorable 6 Félicitations du jury",
+      "kind": "numeric"
+    },
+    "BB": {
+      "label": "Numéro ou code d'identification de l'étudiant",
+      "min": 0,
+      "max": 50,
+      "type": "Alphanumérique",
+      "description": "Correspond en France au numéro INE, ou à défaut d'un numéro interne à l'établissement mentionné sur le diplôme. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "BC": {
+      "label": "Numéro du diplôme",
+      "min": 0,
+      "max": 20,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "BD": {
+      "label": "Niveau du diplôme selon la classification CEC",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Entre autres: Bac=4, BTS/DUT=5, Licence=6, Master=7, Doctorat=8",
+      "kind": "numeric"
+    },
+    "BE": {
+      "label": "Crédits ECTS obtenus",
+      "min": 3,
+      "max": 3,
+      "type": "Numérique",
+      "description": "Entier positif.",
+      "kind": "numeric"
+    },
+    "BF": {
+      "label": "Année universitaire",
+      "min": 3,
+      "max": 3,
+      "type": "Numérique",
+      "description": "Pour l’année 2015-2016, l’année 2016 est encodée dans le champ au format hexadécimal. Les caractères encodés autorisés sont donc les chiffres [0-9] et les lettres [A-F].",
+      "kind": "numeric"
+    },
+    "BG": {
+      "label": "Type de diplôme",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Type de diplôme : BR = Brevet des Collèges CA = Certificat d'Aptitude Professionnelle (CAP) BE = Brevet d'Etudes Professionnelles (BEP) BA = Baccalauréat Général BP = Baccalauréat Professionnel BS = Baccalauréat Technologique BT = Brevet Technicien Supérieur (BTS) DU = Diplôme Universitaire de Technologie (DUT) LC = Licence LP = Licence Professionnelle DE = Diplôme Européen d'Etudes Supérieures (DEES) MA = Master MB = Maîtrise en Administration des Affaires (MBA) IN = Diplôme d'Ingénieur DR = Doctorat",
+      "kind": "text"
+    },
+    "BH": {
+      "label": "Domaine",
+      "min": 0,
+      "max": 30,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "BI": {
+      "label": "Mention",
+      "min": 0,
+      "max": 30,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "BJ": {
+      "label": "Spécialité",
+      "min": 0,
+      "max": 30,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "BK": {
+      "label": "Numéro de l'Attestation de versement de la CVE",
+      "min": 14,
+      "max": 14,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des tirets [-].",
+      "kind": "text"
+    },
+    "C0": {
+      "label": "Genre du vendeur",
+      "min": 1,
+      "max": 1,
+      "type": "Alphanumérique",
+      "description": "Genre masculin (M) ou féminin (F).",
+      "kind": "text"
+    },
+    "C1": {
+      "label": "Nom patronymique du vendeur",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "C2": {
+      "label": "Prénom du vendeur",
+      "min": 0,
+      "max": 20,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les prénoms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "C3": {
+      "label": "Date et heure de la cession",
+      "min": 12,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 12 chiffres au format JJMMAAAAHHmm où JJ représente le jour dans le mois, MM le mois, AAAA l’année, HH l’heure et mm les minutes. Le jour, le numéro du mois, l’heure et les minutes sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "C4": {
+      "label": "Date de la signature du vendeur",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire. Lorsque le jour ou le jour et le mois ne sont pas connus, leurs valeurs sont remplacées par 00.",
+      "kind": "numeric"
+    },
+    "C5": {
+      "label": "Genre de l’acheteur",
+      "min": 1,
+      "max": 1,
+      "type": "Alphanumérique",
+      "description": "Genre masculin (M) ou féminin (F).",
+      "kind": "text"
+    },
+    "C6": {
+      "label": "Nom patronymique de l’acheteur",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "C7": {
+      "label": "Prénom de l’acheteur",
+      "min": 0,
+      "max": 20,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les prénoms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "C8": {
+      "label": "Ligne 4 de la norme adresse postale du domicile de l’acheteur",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Numéro dans la voie + type et nom de la voie. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en section 11.2 du document en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "C9": {
+      "label": "Code postal ou code cedex du domicile de l’acheteur",
+      "min": 5,
+      "max": 5,
+      "type": "Numérique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des chiffres ou des espaces si la donnée n’est pas renseignée (par exemple, dans le cas d’un pays ne disposant pas de code postal).",
+      "kind": "numeric"
+    },
+    "CA": {
+      "label": "Commune du domicile de l’acheteur",
+      "min": 0,
+      "max": 45,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "CB": {
+      "label": "N° d’enregistrement",
+      "min": 10,
+      "max": 10,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9]. La valeur numérique est préfixée par des 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "CC": {
+      "label": "Date et heure d'enregistrement dans le SIV",
+      "min": 12,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 12 chiffres au format JJMMAAAAHHmm où JJ représente le jour dans le mois, MM le mois, AAAA l’année, HH l’heure et mm les minutes. Le jour, le numéro du mois, l’heure et les minutes sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "D0": {
+      "label": "Référence RTC",
+      "min": 17,
+      "max": 17,
+      "type": "Alphanumérique",
+      "description": "Référence unique du document RTC (Renseignement Tarifaire Contraignant) Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et le caractère '-' pour séparer les sous-champs. Le format de ce champ est : XX-XXX-XXXX-XXXXX Ex : FR-BTI-2020-XXXXX",
+      "kind": "text"
+    },
+    "D1": {
+      "label": "Nom du titulaire",
+      "min": 0,
+      "max": 50,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des espaces (‘ ’), des tirets (' - '), des apostrophes (' ' ') et des points (‘.’).",
+      "kind": "text"
+    },
+    "D2": {
+      "label": "EORI",
+      "min": 0,
+      "max": 20,
+      "type": "Alphanumérique",
+      "description": "L’EORI (Economic Operator Registration and Identification) est encodé en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9]. Le format exact est : Code Pays sur 2 car + n car numériques Le code pays respecte la norme ISO 3166-1 Alpha 2 NB : un opérateur étranger pouvant déposer une demande de RTC en France, il incombe d'élargir la taille du EORI (fixé à 17 car en France)",
+      "kind": "text"
+    },
+    "D3": {
+      "label": "Date de début de validité",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Date de début de validité du document. Cette date est composée uniquement de 8 chiffres au format AAAAMMMJJ où AAAA représente l’année, MM le mois et JJ le jour. Le numéro de mois et le jour sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "D4": {
+      "label": "Date de fin de validité",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Date de fin de validité du document. Cette date est composée uniquement de 8 chiffres au format AAAAMMMJJ où AAAA représente l’année, MM le mois et JJ le jour. Le numéro de mois et le jour sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "D5": {
+      "label": "Code marchandise",
+      "min": 8,
+      "max": 10,
+      "type": "Alphanumérique",
+      "description": "Code de la marchandise importée. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9]",
+      "kind": "text"
+    },
+    "D6": {
+      "label": "Numéro de décision",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Numéro de décision attribuée par la DGDDI Cette donnée de 8 caractères est encodée en utilisant uniquement des chiffres [0-9]",
+      "kind": "numeric"
+    },
+    "D7": {
+      "label": "Date de décision",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Date de décision de la DGDDI. Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour, MM le mois et AAAA représente l’année. Le numéro de jour et de mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "D8": {
+      "label": "Durée de validité",
+      "min": 2,
+      "max": 2,
+      "type": "Numérique",
+      "description": "Durée de validité du document. Cette durée est exprimée en nombre de mois. Cette donnée de 2 caractères (préfixés par 0 si nécessaire) est encodée en utilisant uniquement des chiffres [0-9]",
+      "kind": "numeric"
+    },
+    "D9": {
+      "label": "Date de fin de validité de la licence",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Date de décision de la DGDDI. Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour, MM le mois et AAAA représente l’année. Le numéro de jour et de mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "DA": {
+      "label": "Numéro de licence",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Numéro de la licence émise par la DGDDI Cette donnée de 8 caractères est encodée en utilisant uniquement des chiffres [0-9]",
+      "kind": "numeric"
+    },
+    "DB": {
+      "label": "Nom de l’expéditeur",
+      "min": 0,
+      "max": 50,
+      "type": "Alphanumérique",
+      "description": "Nom de l’expéditeur des armes/munitions Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentués [A-Z] et des espaces (‘ ‘)",
+      "kind": "text"
+    },
+    "DC": {
+      "label": "Prénom de l’expéditeur",
+      "min": 0,
+      "max": 50,
+      "type": "Alphanumérique",
+      "description": "Prénom de l’expéditeur des armes/munitions Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentués [A-Z] et des espaces (‘ ‘)",
+      "kind": "text"
+    },
+    "DD": {
+      "label": "Date de naissance de l’expéditeur",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Date de naissance de l’expéditeur. Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour, MM le mois et AAAA représente l’année. Le numéro de jour et de mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "DE": {
+      "label": "Raison sociale de l’expéditeur",
+      "min": 0,
+      "max": 50,
+      "type": "Alphanumérique",
+      "description": "Raison sociale de la société expéditrice des armes/munitions Cette donnée est encodée en utilisant des lettres majuscules non accentués [A-Z] et des chiffres [0-9] et des espaces (‘ ’)",
+      "kind": "text"
+    },
+    "DF": {
+      "label": "SIREN de l’expéditeur",
+      "min": 9,
+      "max": 9,
+      "type": "Numérique",
+      "description": "SIREN de la société expéditrice des armes/munitions Cette donnée de 9 caractères est encodée en utilisant uniquement des chiffres [0-9]",
+      "kind": "numeric"
+    },
+    "DG": {
+      "label": "SIRET de l’expéditeur",
+      "min": 14,
+      "max": 14,
+      "type": "Numérique",
+      "description": "SIRET de la société expéditrice des armes/munitions Cette donnée de 14 caractères est encodée en utilisant uniquement des chiffres [0-9]",
+      "kind": "numeric"
+    },
+    "DH": {
+      "label": "EORI de l’expéditeur",
+      "min": 0,
+      "max": 20,
+      "type": "Alphanumérique",
+      "description": "L’EORI (Economic Operator Registration and Identification) de la société expéditrice est encodé en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9] Le format exact est : Code Pays sur 2 car + Identifiant unique de la société expéditrice dans ce pays (chaîne de caractères de longueur variable suivant le pays) Le code pays respecte la norme ISO 3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "DI": {
+      "label": "TIN de l’expéditeur",
+      "min": 4,
+      "max": 30,
+      "type": "Alphanumérique",
+      "description": "Le TIN (Tax Identification Number ou numéro d’identification fiscale européen) de la société expéditrice est encodé en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "DJ": {
+      "label": "Nom de l’exportateur",
+      "min": 0,
+      "max": 50,
+      "type": "Alphanumérique",
+      "description": "Nom de l’exportateur des armes Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentués [A-Z] et des espaces (‘ ’)",
+      "kind": "text"
+    },
+    "DK": {
+      "label": "Prénom de l’exportateur",
+      "min": 0,
+      "max": 50,
+      "type": "Alphanumérique",
+      "description": "Prénom de l’exportateur des armes Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentués [A-Z] et des espaces (‘ ’)",
+      "kind": "text"
+    },
+    "DL": {
+      "label": "Date de naissance de l’exportateur",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Date de naissance de l’expéditeur. Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour, MM le mois et AAAA représente l’année. Le numéro de jour et de mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "DM": {
+      "label": "Raison sociale de l’exportateur",
+      "min": 0,
+      "max": 50,
+      "type": "Alphanumérique",
+      "description": "Raison sociale de la société exportatrice des armes Cette donnée est encodée en utilisant des lettres majuscules non accentués [A-Z] et des chiffres [0-9] et des espaces (‘ ’)",
+      "kind": "text"
+    },
+    "DN": {
+      "label": "SIREN de l’exportateur",
+      "min": 9,
+      "max": 9,
+      "type": "Numérique",
+      "description": "SIREN de la société exportatrice des armes Cette donnée de 9 caractères est encodée en utilisant uniquement des chiffres [0-9]",
+      "kind": "numeric"
+    },
+    "DO": {
+      "label": "SIRET de l’exportateur",
+      "min": 14,
+      "max": 14,
+      "type": "Numérique",
+      "description": "SIRET de la société exportatrice des armes/munitions Cette donnée de 14 caractères est encodée en utilisant uniquement des chiffres [0-9]",
+      "kind": "numeric"
+    },
+    "DP": {
+      "label": "EORI de l’exportateur",
+      "min": 0,
+      "max": 20,
+      "type": "Alphanumérique",
+      "description": "L’EORI (Economic Operator Registration and Identification) de la société exportatrice est encodé en utilisant uniquement des lettres majuscules non accentuées [A-Z] etdes chiffres [0-9] . Le format exact est : Code Pays sur 2 car + Identifiant unique de la société exportatrice dans ce pays (chaîne de caractères de longueur variable suivant le pays). Le code pays respecte la norme ISO 3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "DQ": {
+      "label": "Nom du destinataire",
+      "min": 0,
+      "max": 50,
+      "type": "Alphanumérique",
+      "description": "Nom du destinataire des armes Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentués [A-Z] et des espaces (‘ ’)",
+      "kind": "text"
+    },
+    "DR": {
+      "label": "Prénom du destinataire",
+      "min": 0,
+      "max": 50,
+      "type": "Alphanumérique",
+      "description": "Prénom du destinataire des armes Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentués [A-Z] et des espaces (‘ ’)",
+      "kind": "text"
+    },
+    "DS": {
+      "label": "Date de naissance du destinataire",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Date de naissance du destinataire Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour, MM le mois et AAAA représente l’année. Le numéro de jour et de mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "DT": {
+      "label": "Raison sociale du destinataire",
+      "min": 0,
+      "max": 50,
+      "type": "Alphanumérique",
+      "description": "Raison sociale de la société destinatrice des armes Cette donnée est encodée en utilisant des lettres majuscules non accentués [A-Z] et des chiffres [0-9] et des espaces (‘ ‘)",
+      "kind": "text"
+    },
+    "DU": {
+      "label": "SIREN du destinataire",
+      "min": 9,
+      "max": 9,
+      "type": "Numérique",
+      "description": "SIREN de la société destinatrice des armes Cette donnée de 9 caractères est encodée en utilisant uniquement des chiffres [0-9]",
+      "kind": "numeric"
+    },
+    "DV": {
+      "label": "SIRET du destinataire",
+      "min": 14,
+      "max": 14,
+      "type": "Numérique",
+      "description": "SIRET de la société destinatrice des armes/munitions Cette donnée de 14 caractères est encodée en utilisant uniquement des chiffres [0-9]",
+      "kind": "numeric"
+    },
+    "DW": {
+      "label": "EORI du destinataire",
+      "min": 0,
+      "max": 20,
+      "type": "Alphanumérique",
+      "description": "L’EORI (Economic Operator Registration and Identification) de la société destinatrice est encodé en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9] . Le format exact est : Code Pays sur 2 car + Identifiant unique de la société destinatrice dans ce pays (chaîne de caractères de longueur variable suivant le pays). Le code pays respecte la norme ISO 3166-1 Alpha 2",
+      "kind": "text"
+    },
+    "DX": {
+      "label": "TIN du destinataire",
+      "min": 4,
+      "max": 30,
+      "type": "Alphanumérique",
+      "description": "Le TIN (Tax Identification Number ou numéro d’identification fiscale européen) de la société destinatrice est encodé en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "DY": {
+      "label": "Nombre de lignes articles",
+      "min": 3,
+      "max": 3,
+      "type": "Numérique",
+      "description": "Nombre de lignes d’articles concernés par le transfert/importation/exportation Cette donnée de 3 caractères (préfixés par 0 si nécessaire) est encodée en utilisant uniquement des chiffres [0-9]",
+      "kind": "numeric"
+    },
+    "DZ": {
+      "label": "Numéro du bon de livraison",
+      "min": 0,
+      "max": 10,
+      "type": "Alphanumérique",
+      "description": "Identifiant du bon de livraison. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "H0": {
+      "label": "Commune de l'expéditeur",
+      "min": 0,
+      "max": 38,
+      "type": "Alphabétique",
+      "description": "Commune de la société expéditrice des marchandises. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "H1": {
+      "label": "Pays de l'expéditeur",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Pays de la société expéditrice des marchandises. Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2.",
+      "kind": "text"
+    },
+    "H2": {
+      "label": "Commune du destinataire",
+      "min": 0,
+      "max": 38,
+      "type": "Alphabétique",
+      "description": "Commune de la société destinatrice des marchandises. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "H3": {
+      "label": "Pays du destinataire",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Pays de la société destinatrice des marchandises. Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2.",
+      "kind": "text"
+    },
+    "H4": {
+      "label": "Date de départ",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Date de départ des marchandises. Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l'année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "H5": {
+      "label": "Date prévisionnelle d’arrivée",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Date prévisionnelle d’arrivée à destination des marchandises. Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l'année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "H6": {
+      "label": "Numéro de plomb",
+      "min": 0,
+      "max": 40,
+      "type": "Numérique",
+      "description": "Identifiant du plomb. Numéro optionnel du plomb apposé sur la marchandise. Cette donnée, pouvant atteindre 40 caractères, est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "H7": {
+      "label": "Codes douaniers",
+      "min": 0,
+      "max": 53,
+      "type": "Alphanumérique",
+      "description": "Liste des codes douaniers distincts des marchandises. Chaque code est encodée en utilisant uniquement des chiffres [0-9]. Jusqu’à 6 codes peuvent être spécifiés en utilisant le caractère slash « / » comme séparateur.",
+      "kind": "text"
+    },
+    "H8": {
+      "label": "Nombre d’emballages articles",
+      "min": 7,
+      "max": 7,
+      "type": "Numérique",
+      "description": "Nombre de d’emballages articles concernés par le transfert/importation/exportation. Cette donnée de 7 caractères (préfixés par 0 si nécessaire) est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "H9": {
+      "label": "Poids brut articles",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Poids brut des articles concernés par le transfert/importation/exportation. Cette donnée de 8 caractères (préfixés par 0 si nécessaire) est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "HA": {
+      "label": "Poids net articles",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Poids net des articles concernés par le transfert/importation/exportation. Cette donnée de 8 caractères (préfixés par 0 si nécessaire) est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "HB": {
+      "label": "Valeur douanière articles",
+      "min": 9,
+      "max": 9,
+      "type": "Numérique",
+      "description": "Valeur douanière des articles concernés par le transfert/importation/exportation. Cette donnée de 9 caractères (préfixés par 0 si nécessaire) est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "HC": {
+      "label": "But de la livraison",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "But de la livraison des marchandises. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "HD": {
+      "label": "Adresse de l'expéditeur",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Adresse de la société expéditrice des marchandises (adresse fournie sans code postal et commune). Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "HE": {
+      "label": "Code postal et commune de l'expéditeur",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Code postal et commune de la société expéditrice des marchandises. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "HF": {
+      "label": "Adresse du destinataire",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Adresse de la société destinatrice des marchandises (adresse fournie sans code postal et commune). Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "HG": {
+      "label": "Code postal et commune du destinataire",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Code postal et commune de la société destinatrice des marchandises. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "HH": {
+      "label": "Numéro d’identification du transport",
+      "min": 0,
+      "max": 20,
+      "type": "Alphanumérique + symbole",
+      "description": "Ce numéro comprend le numéro d’identification du camion ainsi que celui de la remorque/conteneur qui lui est rattaché. Les deux numéros sont séparés par le caractère                                                                        ‘/’. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et les caractères spéciaux ‘-‘ et ‘/’.",
+      "kind": "text"
+    },
+    "HI": {
+      "label": "Numéro, extension et libellé de voie de l'adresse de résidence",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Numéro dans la voie + type et nom de la voie. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces. Il faut utiliser les méthodes de compression définies en annexe 11 de la norme en cas de dépassement de la donnée.",
+      "kind": "text"
+    },
+    "HJ": {
+      "label": "Code postal de l'adresse de résidence",
+      "min": 5,
+      "max": 5,
+      "type": "Numérique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des chiffres ou des espaces si la donnée n’est pas renseignée (par exemple, dans le cas d’un pays ne disposant pas de code postal).",
+      "kind": "numeric"
+    },
+    "HK": {
+      "label": "Commune de l'adresse de résidence",
+      "min": 0,
+      "max": 32,
+      "type": "Alphabétique",
+      "description": "Compris dans la ligne 6 de la norme adresse postale. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces.",
+      "kind": "text"
+    },
+    "HL": {
+      "label": "Code pays de l'adresse de résidence",
+      "min": 2,
+      "max": 2,
+      "type": "Alphabétique",
+      "description": "Le pays est encodé en utilisant son code pays au format ISO3166-1 Alpha 2.",
+      "kind": "text"
+    },
+    "HM": {
+      "label": "Numéro de la CEAF",
+      "min": 15,
+      "max": 18,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "HN": {
+      "label": "Date et heure d'édition",
+      "min": 12,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 12 chiffres au format JJMMAAAAHHmm où JJ représente le jour dans le mois, MM le mois, AAAA l’année, HH l’heure et mm les minutes. Le jour, le numéro du mois, l’heure et les minutes sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "HO": {
+      "label": "Date d'expiration",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "HP": {
+      "label": "Numéro SIA",
+      "min": 12,
+      "max": 12,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "HQ": {
+      "label": "Nombre d'armes de catégorie A",
+      "min": 2,
+      "max": 2,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9]. Le nombre devra être préfixé par des 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "HR": {
+      "label": "Nombre d'armes de catégorie B",
+      "min": 2,
+      "max": 2,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9]. Le nombre devra être préfixé par des 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "HS": {
+      "label": "Nombre d'armes de catégorie C",
+      "min": 2,
+      "max": 2,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9]. Le nombre devra être préfixé par des 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "F0": {
+      "label": "Liste des prénoms",
+      "min": 0,
+      "max": 60,
+      "type": "Alphanumérique",
+      "description": "Les prénoms composés sont séparés par un espace. Les différents prénoms sont séparés par ‘/’. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des espaces et des ‘/’ s’il y a plusieurs prénoms (au maximum 6).",
+      "kind": "text"
+    },
+    "F1": {
+      "label": "Nom patronymique",
+      "min": 0,
+      "max": 38,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace.",
+      "kind": "text"
+    },
+    "F2": {
+      "label": "Date de naissance",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire. Lorsque le jour ou le jour et le mois ne sont pas connus, leurs valeurs sont remplacées par 00.",
+      "kind": "numeric"
+    },
+    "F3": {
+      "label": "Genre",
+      "min": 1,
+      "max": 1,
+      "type": "Alphanumérique",
+      "description": "M (genre masculin), F (féminin), U (unknown)",
+      "kind": "text"
+    },
+    "F4": {
+      "label": "Code analyse",
+      "min": 3,
+      "max": 7,
+      "type": "Alphanumérique",
+      "description": "Code analyse défini par LOINC (https://loinc.org/)",
+      "kind": "text"
+    },
+    "F5": {
+      "label": "Résultat de l’analyse",
+      "min": 1,
+      "max": 1,
+      "type": "Alphanumérique",
+      "description": "P (résultat positif), N (négatif), I (indéterminé), X (prélèvement non conforme)",
+      "kind": "text"
+    },
+    "F6": {
+      "label": "Date et heure du prélèvement",
+      "min": 12,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 12 chiffres au format JJMMAAAAHHmm où JJ représente le jour dans le mois, MM le mois, AAAA l’année, HH l’heure et mm les minutes. Le jour, le numéro du mois, l’heure et les minutes sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "L0": {
+      "label": "Nom Patronymique du patient",
+      "min": 0,
+      "max": 80,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces. Les noms composés sont séparés par un espace. Les caractères spéciaux « - » (ascii 45), « . » (ascii 46), « / » (ascii 47) et ESPACE (ascii 32) sont autorisés.",
+      "kind": "text"
+    },
+    "L1": {
+      "label": "Liste des prénoms du patient",
+      "min": 0,
+      "max": 80,
+      "type": "Alphanumérique",
+      "description": "Les prénoms composés sont séparés par un espace. Les différents prénoms sont séparés par ‘/’. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des espaces et des ‘/’ s’il y a plusieurs prénoms (au maximum 6). Les caractères spéciaux « - » (ascii 45), « . » (ascii 46), « / » (ascii 47) et ESPACE (ascii 32) sont autorisés. Remarque : seulement 1 prénom sur la première version.",
+      "kind": "text"
+    },
+    "L2": {
+      "label": "Date de naissance du patient",
+      "min": 8,
+      "max": 8,
+      "type": "Alphanumérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Certaines valeurs peuvent être des dates lunaires : 1 – 30 pour les jours 1 – 50 pour les mois",
+      "kind": "text"
+    },
+    "L3": {
+      "label": "Nom de la maladie couverte",
+      "min": 0,
+      "max": 30,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] des chiffres [0-9] et les caractères spéciaux « - » (ascii 45), « . » (ascii 46), « / » (ascii 47) et ESPACE (ascii 32). Tout autre caractère spécial à l’origine de la génération du 2D-DOC sera remplacé par un ESPACE. Exemple pour la première version : COVID-19",
+      "kind": "text"
+    },
+    "L4": {
+      "label": "Agent prophylactique",
+      "min": 5,
+      "max": 15,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] des chiffres [0-9] et les caractères spéciaux « - » (ascii 45), « . » (ascii 46), « / » (ascii 47) et ESPACE (ascii 32). Tout autre caractère spécial à l’origine de la génération du 2D-DOC sera remplacé par un ESPACE. Exemple : J07BX03",
+      "kind": "text"
+    },
+    "L5": {
+      "label": "Nom du vaccin",
+      "min": 5,
+      "max": 30,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] des chiffres [0-9] et les caractères spéciaux « - » (ascii 45), « . » (ascii 46), « / » (ascii 47) et ESPACE (ascii 32). Tout autre caractère spécial à l’origine de la génération du 2D-DOC sera remplacé par un ESPACE. Exemple : COMIRNATY PFIZER/BIONTECH",
+      "kind": "text"
+    },
+    "L6": {
+      "label": "Fabricant du vaccin",
+      "min": 5,
+      "max": 30,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] des chiffres [0-9] et les caractères spéciaux « - » (ascii 45), « . » (ascii 46), « / » (ascii 47) et ESPACE (ascii 32). Tout autre caractère spécial à l’origine de la génération du 2D-DOC sera remplacé par un ESPACE. Exemple : COMIRNATY PFIZER/BIONTECH",
+      "kind": "text"
+    },
+    "L7": {
+      "label": "Rang du dernier état de vaccination effectué",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée de 1 caractère est encodée en utilisant uniquement des chiffres [0-9]",
+      "kind": "numeric"
+    },
+    "L8": {
+      "label": "Nombre de doses attendues pour un cycle complet",
+      "min": 1,
+      "max": 1,
+      "type": "Numérique",
+      "description": "Cette donnée de 1 caractère est encodée en utilisant uniquement des chiffres [0-9]",
+      "kind": "numeric"
+    },
+    "L9": {
+      "label": "Date du dernier état du cycle de vaccination",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Exemple : 31052021",
+      "kind": "numeric"
+    },
+    "LA": {
+      "label": "Etat du cycle de vaccination",
+      "min": 2,
+      "max": 2,
+      "type": "Alphanumérique",
+      "description": "Cette donnée de 2 caractères est encodée en utilisant uniquement des lettres majuscules non accentués [A-Z] Exemple : CO / TE",
+      "kind": "text"
+    },
+    "G0": {
+      "label": "Type de procédure",
+      "min": 2,
+      "max": 2,
+      "type": "Alphabétique",
+      "description": "Cette donnée peut uniquement contenir les éléments suivants : Encodage       Valeur PN             Procédure Normale PA             Procédure Accélérée PD             Procédure Dublin",
+      "kind": "text"
+    },
+    "G1": {
+      "label": "Orientation régionale",
+      "min": 2,
+      "max": 2,
+      "type": "Alphabétique",
+      "description": "Cette donnée peut uniquement contenir les éléments suivants : Encodage       Valeur KO             Non (ou aucune orientation régionale) AR             Auvergne-Rhône-Alpes BF             Bourgogne-Franche-Comté BR             Bretagne CV             Centre-Val de Loire GE             Grand Est HF             Hauts-de-France IF             Île-de-France NO             Normandie NA             Nouvelle-Aquitaine OC             Occitanie PL             Pays de la Loire PA             Provence-Alpes-Côte d’Azur",
+      "kind": "text"
+    },
+    "G2": {
+      "label": "Numéro d’usager",
+      "min": 0,
+      "max": 20,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "G3": {
+      "label": "Date de fin des droits",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire",
+      "kind": "numeric"
+    },
+    "G4": {
+      "label": "Somme des montants versés au titre de l'ADA",
+      "min": 0,
+      "max": 10,
+      "type": "Float",
+      "description": "Cette donnée est un nombre positif ou négatif. Elle est encodée en utilisant uniquement des chiffres [0-9], au plus une virgule et au plus un tiret [,-].",
+      "kind": "text"
+    },
+    "G5": {
+      "label": "Information de la Direction Territoriale",
+      "min": 0,
+      "max": 45,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des espaces",
+      "kind": "text"
+    },
+    "E0": {
+      "label": "Type d’arrêtés Permis de conduire",
+      "min": 2,
+      "max": 2,
+      "type": "d’arrêté :",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z] et des chiffres [0-9].",
+      "kind": "text"
+    },
+    "E1": {
+      "label": "Date édition du document",
+      "min": 4,
+      "max": 4,
+      "type": "Alphanumérique",
+      "description": "Date de l’édition du document (nombre de jours après le 01/01/2000 encodée en hexadécimal).",
+      "kind": "date_days2000"
+    },
+    "E2": {
+      "label": "Date de fin de sanction",
+      "min": 4,
+      "max": 4,
+      "type": "Alphanumérique",
+      "description": "Date de fin de sanction (nombre de jours après le 01/01/2000 encodée en hexadécimal).",
+      "kind": "date_days2000"
+    },
+    "E3": {
+      "label": "Date de notification",
+      "min": 4,
+      "max": 4,
+      "type": "Alphanumérique",
+      "description": "Date de notification (nombre de jours après le 01/01/2000 encodée en hexadécimal).",
+      "kind": "date_days2000"
+    },
+    "E4": {
+      "label": "Type de relevé de permis de conduire",
+      "min": 3,
+      "max": 3,
+      "type": "Alphabétique",
+      "description": "Cette donnée peut uniquement contenir les éléments suivants : Encodage       Valeur RII             RII - Relevé d'Information Intégral RIR            RIR - Relevé d'Information Restreint RRP            RRP - Relevé de reconstitution du capital APC            APC - Attestation de permis de conduire",
+      "kind": "text"
+    },
+    "E5": {
+      "label": "Etat du permis de conduire du conducteur",
+      "min": 2,
+      "max": 2,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9]. Pour les détails de l’encodage des différentes valeurs de ce champ et de leur signification, voir l’annexe 13.",
+      "kind": "numeric"
+    },
+    "E6": {
+      "label": "Catégories présentes de permis de conduire",
+      "min": 0,
+      "max": 65,
+      "type": "Alphanumérique",
+      "description": "Cette donnée contient la liste des catégories de permis de conduire séparées par un espace. Par exemple, « A B A1 D1E ». Cette donnée est encodée en utilisant des lettres majuscules non accentuées [A-Z], des chiffres [0-9] et des espaces.",
+      "kind": "text"
+    },
+    "E7": {
+      "label": "SIREN du demandeur du document",
+      "min": 9,
+      "max": 9,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "E8": {
+      "label": "Date des données issues du SNCP",
+      "min": 12,
+      "max": 12,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 12 chiffres au format JJMMAAAAHHmm où JJ représente le jour dans le mois, MM le mois, AAAA l’année, HH l’heure et mm les minutes. Le jour, le numéro du mois, l’heure et les minutes sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "E9": {
+      "label": "N° Dossier",
+      "min": 0,
+      "max": 19,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des chiffres [0-9], des tirets [-] et des espaces.",
+      "kind": "text"
+    },
+    "EA": {
+      "label": "Nature épreuve",
+      "min": 1,
+      "max": 1,
+      "type": "Alphanumérique",
+      "description": "T (Théorique), P (Pratique)",
+      "kind": "text"
+    },
+    "EB": {
+      "label": "Matricule inspecteur",
+      "min": 5,
+      "max": 5,
+      "type": "Numérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    },
+    "EC": {
+      "label": "Date examen",
+      "min": 8,
+      "max": 8,
+      "type": "Numérique",
+      "description": "Cette date est composée uniquement de 8 chiffres au format JJMMAAAA où JJ représente le jour dans le mois, MM le mois et AAAA l’année. Le jour et le numéro du mois sont encodés sur 2 chiffres préfixés par 0 si nécessaire.",
+      "kind": "numeric"
+    },
+    "ED": {
+      "label": "Catégorie permis",
+      "min": 1,
+      "max": 3,
+      "type": "Alphanumérique",
+      "description": "Type de permis : A = Permis motocyclettes (non présent ) AM = Permis cyclomoteur 50 cm3 maximum (non présent ) A1 = Permis motocyclettes 125 cm3 maximum A2 = Permis motocyclettes B = Permis automobiles 3,5 tonnes maximum B1 = Permis automobiles 550kg maximum à vide BE = Permis automobiles attelée 3,5 tonnes maximum C = Permis poids lourds CE = Permis poids lourds avec remorque de 750kg maximum C1E = Permis poids lourds 12 tonnes maximum C1 = Permis poids lourds 7,5 tonnes maximum D = Permis transport collectif DE = Permis transport collectif avec remorque D1 = Permis transport collectif 16 places 8 mètres maximum D1E = Permis transport collectif avec remorque",
+      "kind": "text"
+    },
+    "EE": {
+      "label": "Codes spécifiques",
+      "min": 0,
+      "max": 100,
+      "type": "Alphanumérique",
+      "description": "Cette donnée est encodée en utilisant uniquement des chiffres [0-9], des points [.] et des slashs « / ». Les codes seront séparés par un slash. Par exemple, pour les codes 78, 01.04, 01.07, 102, la donnée sera de la forme 78/01.04/01.07/102",
+      "kind": "text"
+    },
+    "EF": {
+      "label": "Visite médicale demandée",
+      "min": 1,
+      "max": 1,
+      "type": "Alphanumérique",
+      "description": "Valeurs : 1 = OUI, 0 = NON",
+      "kind": "text"
+    },
+    "I0": {
+      "label": "Année du caducée",
+      "min": 4,
+      "max": 4,
+      "type": "Numérique",
+      "description": "Année de validité du caducée Cette date est composée uniquement de 4 chiffres au format AAAA représentant l’année.",
+      "kind": "numeric"
+    },
+    "I1": {
+      "label": "Numéro ordinal",
+      "min": 7,
+      "max": 7,
+      "type": "Numérique",
+      "description": "Identifiant de l’infirmier dans le tableau de l’Ordre",
+      "kind": "numeric"
+    },
+    "I2": {
+      "label": "Mention spécifique",
+      "min": 16,
+      "max": 16,
+      "type": "Alphanumérique",
+      "description": "Ce champ est présent si le mode d’exercice de l’infirmier sur sa cotisation pour l’année en cours est « Libéral » ou « Mixte » (cf. champ « mode d’exercice ») La seule valeur autorisée pour ce champ : SOINS A DOMICILE",
+      "kind": "text"
+    },
+    "I3": {
+      "label": "Nom d’exercice",
+      "min": 1,
+      "max": 54,
+      "type": "Alphanumérique",
+      "description": "Nom de l’infirmier dans le cadre de son exercice professionnel Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des espaces, le séparateur ‘-‘ et l’apostrophe (‘)",
+      "kind": "text"
+    },
+    "I4": {
+      "label": "Prénom d’exercice",
+      "min": 1,
+      "max": 37,
+      "type": "Alphanumérique",
+      "description": "Prénom de l’infirmier dans le cadre de son exercice professionnel. Cette donnée est encodée en utilisant uniquement des lettres majuscules non accentuées [A-Z], des espaces, le séparateur ‘-‘ et l’apostrophe (‘).",
+      "kind": "text"
+    },
+    "I5": {
+      "label": "Mode d’exercice",
+      "min": 5,
+      "max": 13,
+      "type": "Alphanumérique",
+      "description": "Donnée encodé en utilisant uniquement des lettres majuscules non accentués [A-Z] et le séparateur ‘-‘ Identifiant du mode d’exercice d’un infirmier selon les correspondances suivantes : Code                 Libellé LIBERAL        Libéral MIXTE         Mixte SAL-PRIVE       Salarié – Privé SAL-PUBLIC       Salarié – Public BENEVOLE         Bénévole SANS-EXERCICE      Sans activité RETRAITE        Retraité RESERVE        Réserve sanitaire",
+      "kind": "text"
+    },
+    "I6": {
+      "label": "Numéro RPPS",
+      "min": 11,
+      "max": 11,
+      "type": "Numérique",
+      "description": "Identifiant de l’infirmier dans le Répertoire Partagé des Professionnels de Santé (RPPS). Donnée encodé en utilisant uniquement des chiffres [0-9].",
+      "kind": "numeric"
+    }
+  }
+}
