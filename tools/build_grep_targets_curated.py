@@ -3,15 +3,12 @@
 
 Output: twoddoc/catalog/data/grep_targets_curated.json
 
-Same shape as grep_targets.json but pruned per document type to the meaningful
-cross-check fields. Selection rule:
+Same shape as grep_targets.json but pruned per document type. Selection rule:
 
-    keep a field iff signal == "strong" AND
-        ( obligation in {O, O*}            # mandatory, guaranteed present
-          OR label matches a high-value keyword )   # amount / reference / id / date
+    keep a field iff signal == "strong" AND obligation in {O, O*}
 
-This drops WEAK fields (year, country code, small counts) and low-value optional
-fields (co-beneficiaries, secondary recipients, redundant address sub-lines).
+i.e. only discriminating, **mandatory** fields (guaranteed present for the type).
+Drops WEAK fields (year, country code, small counts) and all FACULTATIVE fields.
 
 Usage:
     python tools/build_grep_targets_curated.py
@@ -20,19 +17,11 @@ Usage:
 from __future__ import annotations
 
 import json
-import re
 from pathlib import Path
 
 from twoddoc.catalog import get_catalog
 
 OUT = Path("twoddoc/catalog/data/grep_targets_curated.json")
-
-# high-value markers for keeping an *optional* field
-HIGH_VALUE = re.compile(
-    r"montant|revenu|fiscal|imp[oô]t|r[ée]f[ée]rence|num[ée]ro|iban|bic|qxban|"
-    r"solde|salaire|date|identifiant|matricule|kilom[eé]trage|n[°o]\b",
-    re.IGNORECASE,
-)
 
 
 def est_signal(di) -> str:
@@ -59,25 +48,18 @@ def main() -> None:
             obligation[fid] = "O"
         for fid in r.get("mandatory_alt", []):
             obligation[fid] = "O*"
-        for fid in r.get("facultative", []):
-            obligation.setdefault(fid, "F")
 
         kept, fields = [], {}
         for fid in sorted(f for f in obligation if not f.startswith("0")):  # §3.4
             di = cat.data_id(fid)
             if est_signal(di) != "strong":
                 continue
-            label = di.label if di else ""
-            is_mandatory = obligation[fid] in ("O", "O*")
-            if not (is_mandatory or (label and HIGH_VALUE.search(label))):
-                continue
             kept.append(fid)
-            fields[fid] = {"label": label or None, "kind": di.kind if di else None,
+            fields[fid] = {"label": di.label if di else None,
+                           "kind": di.kind if di else None,
                            "obligation": obligation[fid]}
 
-        interchangeable = sorted(
-            f for f in r.get("mandatory_alt", []) if f in kept
-        )
+        interchangeable = sorted(f for f in r.get("mandatory_alt", []) if f in kept)
         types = doctypes.get(code, {}).get("types") or []
         out[code] = {
             "label": types[0] if types else None,

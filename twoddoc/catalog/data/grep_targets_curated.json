@@ -81,14 +81,6 @@
       "11",
       "12",
       "13",
-      "18",
-      "19",
-      "1A",
-      "1B",
-      "1C",
-      "1D",
-      "1E",
-      "1F",
       "22",
       "24"
     ],
@@ -120,46 +112,6 @@
         "label": "Nom de la personne bénéficiaire de la prestation",
         "kind": "text",
         "obligation": "O*"
-      },
-      "18": {
-        "label": "Numéro de la facture",
-        "kind": "text",
-        "obligation": "F"
-      },
-      "19": {
-        "label": "Numéro de client",
-        "kind": "text",
-        "obligation": "F"
-      },
-      "1A": {
-        "label": "Numéro du contrat",
-        "kind": "text",
-        "obligation": "F"
-      },
-      "1B": {
-        "label": "Identifiant du souscripteur du contrat",
-        "kind": "text",
-        "obligation": "F"
-      },
-      "1C": {
-        "label": "Date d’effet du contrat",
-        "kind": "numeric",
-        "obligation": "F"
-      },
-      "1D": {
-        "label": "Montant TTC de la facture",
-        "kind": "numeric",
-        "obligation": "F"
-      },
-      "1E": {
-        "label": "Numéro de téléphone du bénéficiaire de la prestation",
-        "kind": "numeric",
-        "obligation": "F"
-      },
-      "1F": {
-        "label": "Numéro de téléphone du destinataire de la facture",
-        "kind": "numeric",
-        "obligation": "F"
       },
       "22": {
         "label": "Ligne 4 de la norme adresse postale du point de service des prestations",
@@ -259,21 +211,14 @@
   "04": {
     "label": "Avis d’impôt sur les revenus",
     "grep": [
-      "41",
       "43",
       "44",
       "46",
       "47",
-      "49",
       "4A"
     ],
     "interchangeable_groups": [],
     "fields": {
-      "41": {
-        "label": "Revenu fiscal de référence",
-        "kind": "numeric",
-        "obligation": "F"
-      },
       "43": {
         "label": "Nombre de parts",
         "kind": "text",
@@ -293,11 +238,6 @@
         "label": "Numéro fiscal du déclarant 1",
         "kind": "numeric",
         "obligation": "O"
-      },
-      "49": {
-        "label": "Numéro fiscal du déclarant 2",
-        "kind": "numeric",
-        "obligation": "F"
       },
       "4A": {
         "label": "Date de mise en recouvrement",
@@ -336,10 +276,8 @@
       "53",
       "54",
       "55",
-      "57",
       "58",
-      "59",
-      "5A"
+      "59"
     ],
     "interchangeable_groups": [
       [
@@ -385,11 +323,6 @@
         "kind": "numeric",
         "obligation": "O"
       },
-      "57": {
-        "label": "Date de signature du contrat",
-        "kind": "numeric",
-        "obligation": "F"
-      },
       "58": {
         "label": "Salaire net imposable",
         "kind": "numeric",
@@ -399,11 +332,6 @@
         "label": "Cumul du salaire net imposable",
         "kind": "numeric",
         "obligation": "O"
-      },
-      "5A": {
-        "label": "Salaire brut du mois",
-        "kind": "numeric",
-        "obligation": "F"
       }
     }
   },
@@ -412,10 +340,7 @@
     "grep": [
       "60",
       "62",
-      "66",
-      "69",
-      "6N",
-      "6O"
+      "66"
     ],
     "interchangeable_groups": [],
     "fields": {
@@ -433,21 +358,6 @@
         "label": "Numéro de la pièce d’identité",
         "kind": "text",
         "obligation": "O"
-      },
-      "69": {
-        "label": "Date de naissance",
-        "kind": "numeric",
-        "obligation": "F"
-      },
-      "6N": {
-        "label": "Date de début de validité",
-        "kind": "numeric",
-        "obligation": "F"
-      },
-      "6O": {
-        "label": "Date de fin de validité",
-        "kind": "numeric",
-        "obligation": "F"
       }
     }
   },
@@ -519,35 +429,17 @@
   "10": {
     "label": "Contrat de travail",
     "grep": [
-      "55",
       "57",
-      "58",
-      "59",
       "5A",
       "61",
       "62"
     ],
     "interchangeable_groups": [],
     "fields": {
-      "55": {
-        "label": "Date de début de contrat",
-        "kind": "numeric",
-        "obligation": "F"
-      },
       "57": {
         "label": "Date de signature du contrat",
         "kind": "numeric",
         "obligation": "O"
-      },
-      "58": {
-        "label": "Salaire net imposable",
-        "kind": "numeric",
-        "obligation": "F"
-      },
-      "59": {
-        "label": "Cumul du salaire net imposable",
-        "kind": "numeric",
-        "obligation": "F"
       },
       "5A": {
         "label": "Salaire brut du mois",
@@ -572,7 +464,6 @@
       "30",
       "31",
       "32",
-      "35",
       "36",
       "37",
       "38"
@@ -593,11 +484,6 @@
         "label": "Code BIC/SWIFT",
         "kind": "text",
         "obligation": "O"
-      },
-      "35": {
-        "label": "Identifiant SEPAmail (QXBAN)",
-        "kind": "text",
-        "obligation": "F"
       },
       "36": {
         "label": "Date de début de période",
@@ -622,7 +508,6 @@
       "90",
       "92",
       "94",
-      "95",
       "96"
     ],
     "interchangeable_groups": [],
@@ -642,11 +527,6 @@
         "kind": "text",
         "obligation": "O"
       },
-      "95": {
-        "label": "Numéro de l'acte",
-        "kind": "text",
-        "obligation": "F"
-      },
       "96": {
         "label": "Date de signature de l'acte",
         "kind": "numeric",
@@ -660,16 +540,12 @@
       "60",
       "62",
       "63",
-      "66",
       "69",
       "6A",
       "6K",
       "6L",
-      "6N",
-      "6O",
       "6P",
       "6Q",
-      "6R",
       "6U",
       "6W",
       "6X"
@@ -691,11 +567,6 @@
         "kind": "text",
         "obligation": "O"
       },
-      "66": {
-        "label": "Numéro de la pièce d’identité",
-        "kind": "text",
-        "obligation": "F"
-      },
       "69": {
         "label": "Date de naissance",
         "kind": "numeric",
@@ -716,16 +587,6 @@
         "kind": "text",
         "obligation": "O"
       },
-      "6N": {
-        "label": "Date de début de validité",
-        "kind": "numeric",
-        "obligation": "F"
-      },
-      "6O": {
-        "label": "Date de fin de validité",
-        "kind": "numeric",
-        "obligation": "F"
-      },
       "6P": {
         "label": "Autorisation",
         "kind": "text",
@@ -735,11 +596,6 @@
         "label": "Numéro d’étranger",
         "kind": "text",
         "obligation": "O"
-      },
-      "6R": {
-        "label": "Numéro de visa",
-        "kind": "text",
-        "obligation": "F"
       },
       "6U": {
         "label": "Ligne 4 de l'adresse postale du domicile",
@@ -836,11 +692,9 @@
       "5S",
       "61",
       "62",
-      "66",
       "69",
       "6A",
-      "6L",
-      "6Z"
+      "6L"
     ],
     "interchangeable_groups": [],
     "fields": {
@@ -879,11 +733,6 @@
         "kind": "text",
         "obligation": "O"
       },
-      "66": {
-        "label": "Numéro de la pièce d’identité",
-        "kind": "text",
-        "obligation": "F"
-      },
       "69": {
         "label": "Date de naissance",
         "kind": "numeric",
@@ -898,11 +747,6 @@
         "label": "Date de dépôt de la demande",
         "kind": "text",
         "obligation": "O"
-      },
-      "6Z": {
-        "label": "Numéro d'étranger de l'autorisation de travail",
-        "kind": "text",
-        "obligation": "F"
       }
     }
   },
@@ -1009,21 +853,13 @@
   "18": {
     "label": "Avis de Situation Déclarative à l'Impôt sur",
     "grep": [
-      "41",
       "43",
       "44",
       "46",
-      "47",
-      "49",
       "4B"
     ],
     "interchangeable_groups": [],
     "fields": {
-      "41": {
-        "label": "Revenu fiscal de référence",
-        "kind": "numeric",
-        "obligation": "F"
-      },
       "43": {
         "label": "Nombre de parts",
         "kind": "text",
@@ -1038,16 +874,6 @@
         "label": "Déclarant 1",
         "kind": "text",
         "obligation": "O"
-      },
-      "47": {
-        "label": "Numéro fiscal du déclarant 1",
-        "kind": "numeric",
-        "obligation": "F"
-      },
-      "49": {
-        "label": "Numéro fiscal du déclarant 2",
-        "kind": "numeric",
-        "obligation": "F"
       },
       "4B": {
         "label": "Date de la déclaration",
@@ -1064,8 +890,7 @@
       "4E",
       "4F",
       "4G",
-      "4H",
-      "4I"
+      "4H"
     ],
     "interchangeable_groups": [],
     "fields": {
@@ -1098,11 +923,6 @@
         "label": "Nom(s) du(es) donateur(s)",
         "kind": "text",
         "obligation": "O"
-      },
-      "4I": {
-        "label": "Montant Taxable (en €)",
-        "kind": "numeric",
-        "obligation": "F"
       }
     }
   },
@@ -1157,8 +977,7 @@
       "4O",
       "4P",
       "4Q",
-      "4R",
-      "55"
+      "4R"
     ],
     "interchangeable_groups": [],
     "fields": {
@@ -1186,11 +1005,6 @@
         "label": "SIP gestionnaire",
         "kind": "text",
         "obligation": "O"
-      },
-      "55": {
-        "label": "Date de début de contrat",
-        "kind": "numeric",
-        "obligation": "F"
       }
     }
   },
@@ -1277,8 +1091,7 @@
       "88",
       "8A",
       "8B",
-      "8C",
-      "8I"
+      "8C"
     ],
     "interchangeable_groups": [],
     "fields": {
@@ -1316,23 +1129,15 @@
         "label": "Vie – Identifiant du certificat d’existence",
         "kind": "numeric",
         "obligation": "O"
-      },
-      "8I": {
-        "label": "SMR – Date de mise en concubinage",
-        "kind": "numeric",
-        "obligation": "F"
       }
     }
   },
   "24": {
     "label": null,
     "grep": [
-      "41",
       "43",
       "44",
       "46",
-      "47",
-      "49",
       "4B",
       "4V",
       "4W",
@@ -1340,11 +1145,6 @@
     ],
     "interchangeable_groups": [],
     "fields": {
-      "41": {
-        "label": "Revenu fiscal de référence",
-        "kind": "numeric",
-        "obligation": "F"
-      },
       "43": {
         "label": "Nombre de parts",
         "kind": "text",
@@ -1359,16 +1159,6 @@
         "label": "Déclarant 1",
         "kind": "text",
         "obligation": "O"
-      },
-      "47": {
-        "label": "Numéro fiscal du déclarant 1",
-        "kind": "numeric",
-        "obligation": "F"
-      },
-      "49": {
-        "label": "Numéro fiscal du déclarant 2",
-        "kind": "numeric",
-        "obligation": "F"
       },
       "4B": {
         "label": "Date de la déclaration",
@@ -1448,8 +1238,7 @@
       "A1",
       "A2",
       "A3",
-      "A4",
-      "AA"
+      "A4"
     ],
     "interchangeable_groups": [],
     "fields": {
@@ -1472,11 +1261,6 @@
         "label": "Numéro de série du véhicule (VIN).",
         "kind": "text",
         "obligation": "O"
-      },
-      "AA": {
-        "label": "Date de première immatriculation du véhicule.",
-        "kind": "numeric",
-        "obligation": "F"
       }
     }
   },
@@ -1640,8 +1424,7 @@
       "80",
       "81",
       "82",
-      "83",
-      "86"
+      "83"
     ],
     "interchangeable_groups": [],
     "fields": {
@@ -1664,11 +1447,6 @@
         "label": "Organisme de tutelle",
         "kind": "text",
         "obligation": "O"
-      },
-      "86": {
-        "label": "Numéro de licence",
-        "kind": "text",
-        "obligation": "F"
       }
     }
   },
@@ -1678,7 +1456,6 @@
       "A1",
       "A2",
       "A4",
-      "AA",
       "AM"
     ],
     "interchangeable_groups": [],
@@ -1697,11 +1474,6 @@
         "label": "Numéro de série du véhicule (VIN).",
         "kind": "text",
         "obligation": "O"
-      },
-      "AA": {
-        "label": "Date de première immatriculation du véhicule.",
-        "kind": "numeric",
-        "obligation": "F"
       },
       "AM": {
         "label": "Motif de sur-classement",
@@ -1814,8 +1586,7 @@
       "69",
       "80",
       "81",
-      "85",
-      "86"
+      "85"
     ],
     "interchangeable_groups": [],
     "fields": {
@@ -1838,11 +1609,6 @@
         "label": "Numéro de permis de chasser",
         "kind": "text",
         "obligation": "O"
-      },
-      "86": {
-        "label": "Numéro de licence",
-        "kind": "text",
-        "obligation": "F"
       }
     }
   },
@@ -1855,10 +1621,7 @@
       "6G",
       "6H",
       "AC",
-      "AD",
-      "E1",
-      "E2",
-      "E3"
+      "E1"
     ],
     "interchangeable_groups": [],
     "fields": {
@@ -1892,25 +1655,10 @@
         "kind": "text",
         "obligation": "O"
       },
-      "AD": {
-        "label": "Date Infraction",
-        "kind": "date_days2000",
-        "obligation": "F"
-      },
       "E1": {
         "label": "Date édition du document",
         "kind": "date_days2000",
         "obligation": "O"
-      },
-      "E2": {
-        "label": "Date de fin de sanction",
-        "kind": "date_days2000",
-        "obligation": "F"
-      },
-      "E3": {
-        "label": "Date de notification",
-        "kind": "date_days2000",
-        "obligation": "F"
       }
     }
   },
@@ -1970,8 +1718,7 @@
       "80",
       "81",
       "82",
-      "86",
-      "AI"
+      "86"
     ],
     "interchangeable_groups": [],
     "fields": {
@@ -1994,11 +1741,6 @@
         "label": "Numéro de licence",
         "kind": "text",
         "obligation": "O"
-      },
-      "AI": {
-        "label": "Date d’expiration initiale",
-        "kind": "numeric",
-        "obligation": "F"
       }
     }
   },
@@ -2009,9 +1751,7 @@
       "62",
       "69",
       "D3",
-      "D4",
       "E9",
-      "EB",
       "EC"
     ],
     "interchangeable_groups": [],
@@ -2036,20 +1776,10 @@
         "kind": "numeric",
         "obligation": "O"
       },
-      "D4": {
-        "label": "Date de fin de validité",
-        "kind": "numeric",
-        "obligation": "F"
-      },
       "E9": {
         "label": "N° Dossier",
         "kind": "text",
         "obligation": "O"
-      },
-      "EB": {
-        "label": "Matricule inspecteur",
-        "kind": "numeric",
-        "obligation": "F"
       },
       "EC": {
         "label": "Date examen",
@@ -2114,7 +1844,6 @@
       "B1",
       "B2",
       "B7",
-      "BB",
       "BH",
       "BI",
       "BJ"
@@ -2135,11 +1864,6 @@
         "label": "Date de naissance",
         "kind": "numeric",
         "obligation": "O"
-      },
-      "BB": {
-        "label": "Numéro ou code d'identification de l'étudiant",
-        "kind": "text",
-        "obligation": "F"
       },
       "BH": {
         "label": "Domaine",
@@ -2386,7 +2110,6 @@
       "H2",
       "H4",
       "H5",
-      "H6",
       "H7",
       "H8",
       "H9",
@@ -2420,11 +2143,6 @@
         "label": "Date prévisionnelle d’arrivée",
         "kind": "numeric",
         "obligation": "O"
-      },
-      "H6": {
-        "label": "Numéro de plomb",
-        "kind": "numeric",
-        "obligation": "F"
       },
       "H7": {
         "label": "Codes douaniers",
@@ -2466,7 +2184,6 @@
       "DZ",
       "H4",
       "H5",
-      "H6",
       "H7",
       "H8",
       "H9",
@@ -2505,11 +2222,6 @@
         "label": "Date prévisionnelle d’arrivée",
         "kind": "numeric",
         "obligation": "O"
-      },
-      "H6": {
-        "label": "Numéro de plomb",
-        "kind": "numeric",
-        "obligation": "F"
       },
       "H7": {
         "label": "Codes douaniers",
