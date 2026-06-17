@@ -1,0 +1,4342 @@
+{
+  "00": {
+    "label": "Factures de fournisseur d’énergie",
+    "strong": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "1I",
+      "1J",
+      "1K",
+      "1L",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "weak": [
+      "1G",
+      "26"
+    ],
+    "interchangeable_groups": [
+      [
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    ],
+    "fields": {
+      "10": {
+        "label": "Ligne 1 de la norme adresse postale du bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "11": {
+        "label": "Qualité et/ou titre de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "12": {
+        "label": "Prénom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "13": {
+        "label": "Nom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "1G": {
+        "label": "Présence d’un co-bénéficiaire de la prestation non mentionné dans le code",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "1I": {
+        "label": "Ligne 1 de la norme adresse postale du co-bénéficiaire de la prestation.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1J": {
+        "label": "Qualité et/ou titre du co-bénéficiaire de la prestation.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1K": {
+        "label": "Prénom du co-bénéficiaire de la prestation.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1L": {
+        "label": "Nom du co-bénéficiaire de la prestation.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "20": {
+        "label": "Ligne 2 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "21": {
+        "label": "Ligne 3 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "22": {
+        "label": "Ligne 4 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "23": {
+        "label": "Ligne 5 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "24": {
+        "label": "Code postal ou code cedex du point de service des prestations",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "25": {
+        "label": "Localité de destination ou libellé cedex du point de service des prestations",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "26": {
+        "label": "Pays de service des prestations",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      }
+    }
+  },
+  "01": {
+    "label": "Factures de fournisseur d’accès internet",
+    "strong": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "1A",
+      "1B",
+      "1C",
+      "1D",
+      "1E",
+      "1F",
+      "1I",
+      "1J",
+      "1K",
+      "1L",
+      "1M",
+      "1N",
+      "1O",
+      "1P",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "27",
+      "28",
+      "29",
+      "2A",
+      "2B",
+      "2C"
+    ],
+    "weak": [
+      "1G",
+      "1H",
+      "26",
+      "2D"
+    ],
+    "interchangeable_groups": [
+      [
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    ],
+    "fields": {
+      "10": {
+        "label": "Ligne 1 de la norme adresse postale du bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "11": {
+        "label": "Qualité et/ou titre de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "12": {
+        "label": "Prénom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "13": {
+        "label": "Nom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "14": {
+        "label": "Ligne 1 de la norme adresse postale du destinataire de la facture",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "15": {
+        "label": "Qualité et/ou titre de la personne destinataire de la facture",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "16": {
+        "label": "Prénom de la personne destinataire de la facture",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "17": {
+        "label": "Nom de la personne destinataire de la facture",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "18": {
+        "label": "Numéro de la facture",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "19": {
+        "label": "Numéro de client",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1A": {
+        "label": "Numéro du contrat",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1B": {
+        "label": "Identifiant du souscripteur du contrat",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1C": {
+        "label": "Date d’effet du contrat",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1D": {
+        "label": "Montant TTC de la facture",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1E": {
+        "label": "Numéro de téléphone du bénéficiaire de la prestation",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1F": {
+        "label": "Numéro de téléphone du destinataire de la facture",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1G": {
+        "label": "Présence d’un co-bénéficiaire de la prestation non mentionné dans le code",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "1H": {
+        "label": "Présence d’un co-destinataire de la facture non mentionné dans le code",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "1I": {
+        "label": "Ligne 1 de la norme adresse postale du co-bénéficiaire de la prestation.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1J": {
+        "label": "Qualité et/ou titre du co-bénéficiaire de la prestation.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1K": {
+        "label": "Prénom du co-bénéficiaire de la prestation.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1L": {
+        "label": "Nom du co-bénéficiaire de la prestation.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1M": {
+        "label": "Ligne 1 de la norme adresse postale du co-destinataire de la facture.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1N": {
+        "label": "Qualité et/ou titre du co-destinataire de la facture.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1O": {
+        "label": "Prénom du co-destinataire de la facture.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1P": {
+        "label": "Nom du co-destinataire de la facture.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "20": {
+        "label": "Ligne 2 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "21": {
+        "label": "Ligne 3 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "22": {
+        "label": "Ligne 4 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "23": {
+        "label": "Ligne 5 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "24": {
+        "label": "Code postal ou code cedex du point de service des prestations",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "25": {
+        "label": "Localité de destination ou libellé cedex du point de service des prestations",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "26": {
+        "label": "Pays de service des prestations",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "27": {
+        "label": "Ligne 2 de la norme adresse postale du destinataire de la facture",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "28": {
+        "label": "Ligne 3 de la norme adresse postale du destinataire de la facture",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "29": {
+        "label": "Ligne 4 de la norme adresse postale du destinataire de la facture",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "2A": {
+        "label": "Ligne 5 de la norme adresse postale du destinataire de la facture",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "2B": {
+        "label": "Code postal ou code cedex du destinataire de la facture",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "2C": {
+        "label": "Localité de destination ou libellé cedex du destinataire de la facture",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "2D": {
+        "label": "Pays du destinataire de la facture",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "weak"
+      }
+    }
+  },
+  "02": {
+    "label": "Avis de taxe d’habitation",
+    "strong": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "1I",
+      "1J",
+      "1K",
+      "1L",
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "weak": [
+      "1G",
+      "26"
+    ],
+    "interchangeable_groups": [
+      [
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    ],
+    "fields": {
+      "10": {
+        "label": "Ligne 1 de la norme adresse postale du bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "11": {
+        "label": "Qualité et/ou titre de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "12": {
+        "label": "Prénom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "13": {
+        "label": "Nom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "1G": {
+        "label": "Présence d’un co-bénéficiaire de la prestation non mentionné dans le code",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "1I": {
+        "label": "Ligne 1 de la norme adresse postale du co-bénéficiaire de la prestation.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1J": {
+        "label": "Qualité et/ou titre du co-bénéficiaire de la prestation.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1K": {
+        "label": "Prénom du co-bénéficiaire de la prestation.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "1L": {
+        "label": "Nom du co-bénéficiaire de la prestation.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "22": {
+        "label": "Ligne 4 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "23": {
+        "label": "Ligne 5 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "24": {
+        "label": "Code postal ou code cedex du point de service des prestations",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "25": {
+        "label": "Localité de destination ou libellé cedex du point de service des prestations",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "26": {
+        "label": "Pays de service des prestations",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      }
+    }
+  },
+  "03": {
+    "label": "Relevé d’identité bancaire.",
+    "strong": [
+      "30",
+      "31",
+      "32"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "30": {
+        "label": "Qualité Nom et Prénom.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "31": {
+        "label": "Code IBAN",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "32": {
+        "label": "Code BIC/SWIFT",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "04": {
+    "label": "Avis d’impôt sur les revenus",
+    "strong": [
+      "41",
+      "43",
+      "44",
+      "46",
+      "47",
+      "48",
+      "49",
+      "4A"
+    ],
+    "weak": [
+      "45"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "41": {
+        "label": "Revenu fiscal de référence",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "43": {
+        "label": "Nombre de parts",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "44": {
+        "label": "Référence d’avis d’impôt",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "45": {
+        "label": "Année des revenus",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "46": {
+        "label": "Déclarant 1",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "47": {
+        "label": "Numéro fiscal du déclarant 1",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "48": {
+        "label": "Déclarant 2",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "49": {
+        "label": "Numéro fiscal du déclarant 2",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "4A": {
+        "label": "Date de mise en recouvrement",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "05": {
+    "label": "Relevé d’Identité SEPAmail",
+    "strong": [
+      "30",
+      "35"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "30": {
+        "label": "Qualité Nom et Prénom.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "35": {
+        "label": "Identifiant SEPAmail (QXBAN)",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "06": {
+    "label": "Bulletin de salaire",
+    "strong": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "53",
+      "54",
+      "55",
+      "57",
+      "58",
+      "59",
+      "5A"
+    ],
+    "weak": [
+      "5T"
+    ],
+    "interchangeable_groups": [
+      [
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    ],
+    "fields": {
+      "10": {
+        "label": "Ligne 1 de la norme adresse postale du bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "11": {
+        "label": "Qualité et/ou titre de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "12": {
+        "label": "Prénom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "13": {
+        "label": "Nom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "53": {
+        "label": "Début de période",
+        "kind": "date_days2000",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "54": {
+        "label": "Fin de période",
+        "kind": "date_days2000",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "55": {
+        "label": "Date de début de contrat",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "57": {
+        "label": "Date de signature du contrat",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "58": {
+        "label": "Salaire net imposable",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "59": {
+        "label": "Cumul du salaire net imposable",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "5A": {
+        "label": "Salaire brut du mois",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "5T": {
+        "label": "Type de contrat de travail",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "weak"
+      }
+    }
+  },
+  "07": {
+    "label": "Titre d’identité",
+    "strong": [
+      "60",
+      "61",
+      "62",
+      "63",
+      "66",
+      "69",
+      "6A",
+      "6F",
+      "6N",
+      "6O",
+      "6S",
+      "6T",
+      "6U",
+      "6V",
+      "6W",
+      "6X"
+    ],
+    "weak": [
+      "65",
+      "67",
+      "68",
+      "6C",
+      "6Y"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "61": {
+        "label": "Prénom",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "63": {
+        "label": "Nom d’usage",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "65": {
+        "label": "Type de pièce d’identité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "66": {
+        "label": "Numéro de la pièce d’identité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "67": {
+        "label": "Nationalité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "68": {
+        "label": "Genre",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6A": {
+        "label": "Lieu de naissance",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6C": {
+        "label": "Pays de naissance",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "6F": {
+        "label": "Machine Readable Zone (Zone de Lecture Automatique, ZLA)",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6N": {
+        "label": "Date de début de validité",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6O": {
+        "label": "Date de fin de validité",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6S": {
+        "label": "Ligne 2 de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6T": {
+        "label": "Ligne 3 de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6U": {
+        "label": "Ligne 4 de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6V": {
+        "label": "Ligne 5 de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6W": {
+        "label": "Code postal ou code cedex de l'adresse postale du domicile",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6X": {
+        "label": "Commune de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6Y": {
+        "label": "Code pays de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "weak"
+      }
+    }
+  },
+  "08": {
+    "label": "MRZ",
+    "strong": [
+      "6F"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "6F": {
+        "label": "Machine Readable Zone (Zone de Lecture Automatique, ZLA)",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "09": {
+    "label": "Facture étendue",
+    "strong": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "22",
+      "24"
+    ],
+    "weak": [
+      "26"
+    ],
+    "interchangeable_groups": [
+      [
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    ],
+    "fields": {
+      "10": {
+        "label": "Ligne 1 de la norme adresse postale du bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "11": {
+        "label": "Qualité et/ou titre de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "12": {
+        "label": "Prénom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "13": {
+        "label": "Nom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*",
+        "signal": "strong"
+      },
+      "22": {
+        "label": "Ligne 4 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "24": {
+        "label": "Code postal ou code cedex du point de service des prestations",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "26": {
+        "label": "Pays de service des prestations",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      }
+    }
+  },
+  "10": {
+    "label": "Contrat de travail",
+    "strong": [
+      "53",
+      "54",
+      "55",
+      "57",
+      "58",
+      "59",
+      "5A",
+      "61",
+      "62"
+    ],
+    "weak": [
+      "5T"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "53": {
+        "label": "Début de période",
+        "kind": "date_days2000",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "54": {
+        "label": "Fin de période",
+        "kind": "date_days2000",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "55": {
+        "label": "Date de début de contrat",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "57": {
+        "label": "Date de signature du contrat",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "58": {
+        "label": "Salaire net imposable",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "59": {
+        "label": "Cumul du salaire net imposable",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "5A": {
+        "label": "Salaire brut du mois",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "5T": {
+        "label": "Type de contrat de travail",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "61": {
+        "label": "Prénom",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "11": {
+    "label": "Relevé de compte",
+    "strong": [
+      "30",
+      "31",
+      "32",
+      "35",
+      "36",
+      "37",
+      "38"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "30": {
+        "label": "Qualité Nom et Prénom.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "31": {
+        "label": "Code IBAN",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "32": {
+        "label": "Code BIC/SWIFT",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "35": {
+        "label": "Identifiant SEPAmail (QXBAN)",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "36": {
+        "label": "Date de début de période",
+        "kind": "date_days2000",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "37": {
+        "label": "Date de fin de période",
+        "kind": "date_days2000",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "38": {
+        "label": "Solde compte début de période",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "12": {
+    "label": "Acte d’huissier",
+    "strong": [
+      "90",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95",
+      "96"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "90": {
+        "label": "Identité de l'huissier de justice",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "91": {
+        "label": "Identité ou raison sociale du demandeur",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "92": {
+        "label": "Identité ou raison sociale du destinataire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "93": {
+        "label": "Identité ou raison sociale de tiers concerné",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "94": {
+        "label": "Intitulé de l'acte",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "95": {
+        "label": "Numéro de l'acte",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "96": {
+        "label": "Date de signature de l'acte",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "13": {
+    "label": "Document étranger",
+    "strong": [
+      "60",
+      "61",
+      "62",
+      "63",
+      "66",
+      "69",
+      "6A",
+      "6K",
+      "6L",
+      "6M",
+      "6N",
+      "6O",
+      "6P",
+      "6Q",
+      "6R",
+      "6S",
+      "6T",
+      "6U",
+      "6V",
+      "6W",
+      "6X"
+    ],
+    "weak": [
+      "67",
+      "68",
+      "6C",
+      "6J",
+      "6Y"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "61": {
+        "label": "Prénom",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "63": {
+        "label": "Nom d’usage",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "66": {
+        "label": "Numéro de la pièce d’identité",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "67": {
+        "label": "Nationalité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "68": {
+        "label": "Genre",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6A": {
+        "label": "Lieu de naissance",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6C": {
+        "label": "Pays de naissance",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "6J": {
+        "label": "Type de document étranger",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "6K": {
+        "label": "Numéro de la demande de document étranger",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6L": {
+        "label": "Date de dépôt de la demande",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6M": {
+        "label": "Catégorie du titre",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6N": {
+        "label": "Date de début de validité",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6O": {
+        "label": "Date de fin de validité",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6P": {
+        "label": "Autorisation",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6Q": {
+        "label": "Numéro d’étranger",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6R": {
+        "label": "Numéro de visa",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6S": {
+        "label": "Ligne 2 de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6T": {
+        "label": "Ligne 3 de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6U": {
+        "label": "Ligne 4 de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6V": {
+        "label": "Ligne 5 de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "6W": {
+        "label": "Code postal ou code cedex de l'adresse postale du domicile",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6X": {
+        "label": "Commune de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6Y": {
+        "label": "Code pays de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "weak"
+      }
+    }
+  },
+  "14": {
+    "label": "Attestation DICEM",
+    "strong": [
+      "60",
+      "62",
+      "A2",
+      "AO",
+      "AP",
+      "AQ",
+      "AR",
+      "AS",
+      "AU",
+      "AV",
+      "AW",
+      "AX",
+      "AY",
+      "AZ"
+    ],
+    "weak": [
+      "AT"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "A2": {
+        "label": "Marque du véhicule.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AO": {
+        "label": "Numéro d’identification",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AP": {
+        "label": "Type d’engin",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AQ": {
+        "label": "Numéro de série",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AR": {
+        "label": "Modèle",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "AS": {
+        "label": "Couleur dominante",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AT": {
+        "label": "Type de propriétaire",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "AU": {
+        "label": "Ligne 2 de l'adresse postale du propriétaire",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "AV": {
+        "label": "Ligne 3 de l'adresse postale du propriétaire",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "AW": {
+        "label": "Ligne 4 de l'adresse postale du propriétaire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AX": {
+        "label": "Ligne 5 de l'adresse postale du propriétaire",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "AY": {
+        "label": "Code postal ou code cedex de l'adresse postale du propriétaire",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AZ": {
+        "label": "Commune de l'adresse postale du propriétaire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "15": {
+    "label": "Autorisation de Travail – AES Métier en",
+    "strong": [
+      "55",
+      "5N",
+      "5Q",
+      "5R",
+      "5S",
+      "61",
+      "62",
+      "66",
+      "69",
+      "6A",
+      "6L",
+      "6Z"
+    ],
+    "weak": [
+      "5T",
+      "67"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "55": {
+        "label": "Date de début de contrat",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "5N": {
+        "label": "Numéro de dossier d'autorisation de travail",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "5Q": {
+        "label": "Nom du déclarant",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "5R": {
+        "label": "Prénom du déclarant",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "5S": {
+        "label": "Fonction du déclarant",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "5T": {
+        "label": "Type de contrat de travail",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "61": {
+        "label": "Prénom",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "66": {
+        "label": "Numéro de la pièce d’identité",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "67": {
+        "label": "Nationalité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6A": {
+        "label": "Lieu de naissance",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6L": {
+        "label": "Date de dépôt de la demande",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6Z": {
+        "label": "Numéro d'étranger de l'autorisation de travail",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      }
+    }
+  },
+  "16": {
+    "label": "Attestation de Demande d’Asile",
+    "strong": [
+      "60",
+      "62",
+      "69",
+      "6O",
+      "6Q",
+      "G2"
+    ],
+    "weak": [
+      "67",
+      "G0",
+      "G1"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "67": {
+        "label": "Nationalité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6O": {
+        "label": "Date de fin de validité",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6Q": {
+        "label": "Numéro d’étranger",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "G0": {
+        "label": "Type de procédure",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "G1": {
+        "label": "Orientation régionale",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "G2": {
+        "label": "Numéro d’usager",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "17": {
+    "label": null,
+    "strong": [
+      "60",
+      "69",
+      "6G",
+      "6H",
+      "6Q",
+      "G3",
+      "G4",
+      "G5"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6G": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6H": {
+        "label": "Civilité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6Q": {
+        "label": "Numéro d’étranger",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "G3": {
+        "label": "Date de fin des droits",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "G4": {
+        "label": "Somme des montants versés au titre de l'ADA",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "G5": {
+        "label": "Information de la Direction Territoriale",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "18": {
+    "label": "Avis de Situation Déclarative à l'Impôt sur",
+    "strong": [
+      "41",
+      "43",
+      "44",
+      "46",
+      "47",
+      "48",
+      "49",
+      "4B"
+    ],
+    "weak": [
+      "45"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "41": {
+        "label": "Revenu fiscal de référence",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "43": {
+        "label": "Nombre de parts",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "44": {
+        "label": "Référence d’avis d’impôt",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "45": {
+        "label": "Année des revenus",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "46": {
+        "label": "Déclarant 1",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "47": {
+        "label": "Numéro fiscal du déclarant 1",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "48": {
+        "label": "Déclarant 2",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "49": {
+        "label": "Numéro fiscal du déclarant 2",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "4B": {
+        "label": "Date de la déclaration",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "19": {
+    "label": "Déclarations de dons",
+    "strong": [
+      "4C",
+      "4D",
+      "4E",
+      "4F",
+      "4G",
+      "4H",
+      "4I"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "4C": {
+        "label": "Date d’enregistrement",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4D": {
+        "label": "Montant du don (en €)",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4E": {
+        "label": "Montant des droits payés (en €)",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4F": {
+        "label": "Référence d’enregistrement",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4G": {
+        "label": "Nom du donataire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4H": {
+        "label": "Nom(s) du(es) donateur(s)",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4I": {
+        "label": "Montant Taxable (en €)",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      }
+    }
+  },
+  "20": {
+    "label": "Déclarations de cession de droits sociaux",
+    "strong": [
+      "4C",
+      "4E",
+      "4F",
+      "4J",
+      "4K",
+      "4L"
+    ],
+    "weak": [
+      "4M"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "4C": {
+        "label": "Date d’enregistrement",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4E": {
+        "label": "Montant des droits payés (en €)",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4F": {
+        "label": "Référence d’enregistrement",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4J": {
+        "label": "Montant de la cession (en €)",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4K": {
+        "label": "Nom du cessionnaire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4L": {
+        "label": "Nom du cédant",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4M": {
+        "label": "Taux applicable",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "weak"
+      }
+    }
+  },
+  "21": {
+    "label": "Attestation 2041-ASK",
+    "strong": [
+      "4N",
+      "4O",
+      "4P",
+      "4Q",
+      "4R",
+      "4T",
+      "4U",
+      "55"
+    ],
+    "weak": [
+      "4S"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "4N": {
+        "label": "Nom et prénoms du déclarant",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4O": {
+        "label": "Adresse du déclarant",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4P": {
+        "label": "Code postal du déclarant",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4Q": {
+        "label": "Commune du déclarant",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4R": {
+        "label": "SIP gestionnaire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4S": {
+        "label": "Millésime",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "4T": {
+        "label": "Administration cantonale suisse",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "4U": {
+        "label": "Dénomination sociale de l’employeur",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "55": {
+        "label": "Date de début de contrat",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      }
+    }
+  },
+  "22": {
+    "label": "Carte Européenne d’Arme à Feu (CEAF)",
+    "strong": [
+      "60",
+      "69",
+      "6A",
+      "6G",
+      "HI",
+      "HJ",
+      "HK",
+      "HM",
+      "HN",
+      "HO",
+      "HP"
+    ],
+    "weak": [
+      "67",
+      "HL",
+      "HQ",
+      "HR",
+      "HS"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "67": {
+        "label": "Nationalité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6A": {
+        "label": "Lieu de naissance",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6G": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HI": {
+        "label": "Numéro, extension et libellé de voie de l'adresse de résidence",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HJ": {
+        "label": "Code postal de l'adresse de résidence",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HK": {
+        "label": "Commune de l'adresse de résidence",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HL": {
+        "label": "Code pays de l'adresse de résidence",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "HM": {
+        "label": "Numéro de la CEAF",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HN": {
+        "label": "Date et heure d'édition",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HO": {
+        "label": "Date d'expiration",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HP": {
+        "label": "Numéro SIA",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HQ": {
+        "label": "Nombre d'armes de catégorie A",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "HR": {
+        "label": "Nombre d'armes de catégorie B",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "HS": {
+        "label": "Nombre d'armes de catégorie C",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      }
+    }
+  },
+  "23": {
+    "label": "Certificat de Preuve de Vie",
+    "strong": [
+      "60",
+      "69",
+      "87",
+      "88",
+      "89",
+      "8A",
+      "8B",
+      "8C",
+      "8I",
+      "8K"
+    ],
+    "weak": [
+      "8D",
+      "8E",
+      "8F",
+      "8G",
+      "8H",
+      "8J"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "87": {
+        "label": "Assuré - Nom patronymique",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "88": {
+        "label": "Assuré - Identifiant",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "89": {
+        "label": "Assuré - Email",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "8A": {
+        "label": "Assuré – Date de début de campagne",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "8B": {
+        "label": "Assuré – Identifiant enquête MCE",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "8C": {
+        "label": "Vie – Identifiant du certificat d’existence",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "8D": {
+        "label": "Vie – Date émission certificat",
+        "kind": "time",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "8E": {
+        "label": "SMR – Indicateur remarié",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "8F": {
+        "label": "SMR – Indicateur non remarié",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "8G": {
+        "label": "SMR – Indicateur concubinage",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "8H": {
+        "label": "SMR – Indicateur PACS",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "8I": {
+        "label": "SMR – Date de mise en concubinage",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "8J": {
+        "label": "Contact – Indicateur de dématérialisation",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "8K": {
+        "label": "Contact - Email",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      }
+    }
+  },
+  "24": {
+    "label": null,
+    "strong": [
+      "41",
+      "43",
+      "44",
+      "46",
+      "47",
+      "48",
+      "49",
+      "4B",
+      "4V",
+      "4W",
+      "4X"
+    ],
+    "weak": [
+      "45"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "41": {
+        "label": "Revenu fiscal de référence",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "43": {
+        "label": "Nombre de parts",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "44": {
+        "label": "Référence d’avis d’impôt",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "45": {
+        "label": "Année des revenus",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "46": {
+        "label": "Déclarant 1",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "47": {
+        "label": "Numéro fiscal du déclarant 1",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "48": {
+        "label": "Déclarant 2",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "49": {
+        "label": "Numéro fiscal du déclarant 2",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "4B": {
+        "label": "Date de la déclaration",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4V": {
+        "label": "Impôt sur le revenu net",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4W": {
+        "label": "Reste à payer",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "4X": {
+        "label": "Retenue à la source",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "25": {
+    "label": null,
+    "strong": [
+      "57",
+      "5A",
+      "5S",
+      "62",
+      "66",
+      "69",
+      "6A"
+    ],
+    "weak": [
+      "5T",
+      "67"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "57": {
+        "label": "Date de signature du contrat",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "5A": {
+        "label": "Salaire brut du mois",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "5S": {
+        "label": "Fonction du déclarant",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "5T": {
+        "label": "Type de contrat de travail",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "66": {
+        "label": "Numéro de la pièce d’identité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "67": {
+        "label": "Nationalité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6A": {
+        "label": "Lieu de naissance",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "A0": {
+    "label": "Certificat de qualité de l’air",
+    "strong": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "AA"
+    ],
+    "weak": [
+      "A0",
+      "A5",
+      "A6",
+      "A7",
+      "A9"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "A0": {
+        "label": "Pays ayant émis l’immatriculation du véhicule.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "A1": {
+        "label": "Immatriculation du véhicule",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "A2": {
+        "label": "Marque du véhicule.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "A3": {
+        "label": "Nom commercial du véhicule.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "A4": {
+        "label": "Numéro de série du véhicule (VIN).",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "A5": {
+        "label": "Catégorie du véhicule.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "A6": {
+        "label": "Carburant.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "A7": {
+        "label": "Taux d’émission de CO2 du véhicule (en g/km).",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "A9": {
+        "label": "Classe d’émission polluante.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "AA": {
+        "label": "Date de première immatriculation du véhicule.",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      }
+    }
+  },
+  "A1": {
+    "label": "Courrier Permis à Points",
+    "strong": [
+      "60",
+      "6G",
+      "6H",
+      "AB",
+      "AC"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6G": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6H": {
+        "label": "Civilité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AB": {
+        "label": "Type de lettre",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AC": {
+        "label": "N° Dossier",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "A2": {
+    "label": "Carte Mobilité Inclusion (CMI)",
+    "strong": [
+      "AH",
+      "AI"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "AH": {
+        "label": "Numéro de la carte",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AI": {
+        "label": "Date d’expiration initiale",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "A3": {
+    "label": "Carte T3P",
+    "strong": [
+      "A1",
+      "AJ",
+      "AK"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "A1": {
+        "label": "Immatriculation du véhicule",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AJ": {
+        "label": "Numéro EVTC",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AK": {
+        "label": "Numéro de macaron",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "A4": {
+    "label": "Certificat de décès",
+    "strong": [
+      "70",
+      "72",
+      "73",
+      "77",
+      "78",
+      "7K",
+      "7M"
+    ],
+    "weak": [
+      "7C",
+      "7D",
+      "7E",
+      "7G"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "70": {
+        "label": "Date et heure du décès",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "72": {
+        "label": "Nom du défunt",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "73": {
+        "label": "Prénoms du défunt",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "77": {
+        "label": "Commune de décès",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "78": {
+        "label": "Code postal de la commune de décès",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "7C": {
+        "label": "Obstacle médico-légal",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "7D": {
+        "label": "Mise en bière",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "7E": {
+        "label": "Obstacle aux soins de conservation",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "7G": {
+        "label": "Recherche de la cause du décès",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "7K": {
+        "label": "Code NNC",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "7M": {
+        "label": "Identification du médecin",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "A5": {
+    "label": null,
+    "strong": [
+      "AI",
+      "AL"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "AI": {
+        "label": "Date d’expiration initiale",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AL": {
+        "label": "Numéro de la carte",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "A6": {
+    "label": "Carte Professionnelle Sapeur-Pompier",
+    "strong": [
+      "80",
+      "81",
+      "82",
+      "83",
+      "86"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "80": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "81": {
+        "label": "Prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "82": {
+        "label": "Numéro de carte",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "83": {
+        "label": "Organisme de tutelle",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "86": {
+        "label": "Numéro de licence",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      }
+    }
+  },
+  "A7": {
+    "label": "Certificat de qualité de l’air (V2)",
+    "strong": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "AA",
+      "AM"
+    ],
+    "weak": [
+      "A0",
+      "A5",
+      "A6",
+      "A7",
+      "A9"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "A0": {
+        "label": "Pays ayant émis l’immatriculation du véhicule.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "A1": {
+        "label": "Immatriculation du véhicule",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "A2": {
+        "label": "Marque du véhicule.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "A3": {
+        "label": "Nom commercial du véhicule.",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "A4": {
+        "label": "Numéro de série du véhicule (VIN).",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "A5": {
+        "label": "Catégorie du véhicule.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "A6": {
+        "label": "Carburant.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "A7": {
+        "label": "Taux d’émission de CO2 du véhicule (en g/km).",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "A9": {
+        "label": "Classe d’émission polluante.",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "AA": {
+        "label": "Date de première immatriculation du véhicule.",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "AM": {
+        "label": "Motif de sur-classement",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "A8": {
+    "label": "Certificat de cession électronique",
+    "strong": [
+      "A1",
+      "A4",
+      "AA",
+      "AN",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "CA",
+      "CB",
+      "CC"
+    ],
+    "weak": [
+      "C0",
+      "C5"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "A1": {
+        "label": "Immatriculation du véhicule",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "A4": {
+        "label": "Numéro de série du véhicule (VIN).",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AA": {
+        "label": "Date de première immatriculation du véhicule.",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AN": {
+        "label": "Kilométrage",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "C0": {
+        "label": "Genre du vendeur",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "C1": {
+        "label": "Nom patronymique du vendeur",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "C2": {
+        "label": "Prénom du vendeur",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "C3": {
+        "label": "Date et heure de la cession",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "C4": {
+        "label": "Date de la signature du vendeur",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "C5": {
+        "label": "Genre de l’acheteur",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "C6": {
+        "label": "Nom patronymique de l’acheteur",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "C7": {
+        "label": "Prénom de l’acheteur",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "C8": {
+        "label": "Ligne 4 de la norme adresse postale du domicile de l’acheteur",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "C9": {
+        "label": "Code postal ou code cedex du domicile de l’acheteur",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "CA": {
+        "label": "Commune du domicile de l’acheteur",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "CB": {
+        "label": "N° d’enregistrement",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "CC": {
+        "label": "Date et heure d'enregistrement dans le SIV",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "A9": {
+    "label": "Permis de chasser",
+    "strong": [
+      "69",
+      "80",
+      "81",
+      "85",
+      "86"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "80": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "81": {
+        "label": "Prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "85": {
+        "label": "Numéro de permis de chasser",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "86": {
+        "label": "Numéro de licence",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      }
+    }
+  },
+  "AA": {
+    "label": "Arrêtés Permis de conduire",
+    "strong": [
+      "60",
+      "69",
+      "6A",
+      "6G",
+      "6H",
+      "AC",
+      "AD",
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "weak": [
+      "AE",
+      "E0"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6A": {
+        "label": "Lieu de naissance",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6G": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6H": {
+        "label": "Civilité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AC": {
+        "label": "N° Dossier",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AD": {
+        "label": "Date Infraction",
+        "kind": "date_days2000",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "AE": {
+        "label": "Heure de l’infraction",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "E0": {
+        "label": "Type d’arrêtés Permis de conduire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "E1": {
+        "label": "Date édition du document",
+        "kind": "date_days2000",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "E2": {
+        "label": "Date de fin de sanction",
+        "kind": "date_days2000",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "E3": {
+        "label": "Date de notification",
+        "kind": "date_days2000",
+        "obligation": "F",
+        "signal": "strong"
+      }
+    }
+  },
+  "AB": {
+    "label": "Relevé d’Information Permis de conduire",
+    "strong": [
+      "60",
+      "69",
+      "6A",
+      "6G",
+      "6H",
+      "AC",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "weak": [
+      "AG",
+      "E4",
+      "E5"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6A": {
+        "label": "Lieu de naissance",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6G": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "6H": {
+        "label": "Civilité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AC": {
+        "label": "N° Dossier",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AG": {
+        "label": "Solde de points",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "weak"
+      },
+      "E4": {
+        "label": "Type de relevé de permis de conduire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "E5": {
+        "label": "Etat du permis de conduire du conducteur",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "E6": {
+        "label": "Catégories présentes de permis de conduire",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "E7": {
+        "label": "SIREN du demandeur du document",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "E8": {
+        "label": "Date des données issues du SNCP",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "AC": {
+    "label": "Licence de conducteur de train",
+    "strong": [
+      "80",
+      "81",
+      "82",
+      "86",
+      "AI"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "80": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "81": {
+        "label": "Prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "82": {
+        "label": "Numéro de carte",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "86": {
+        "label": "Numéro de licence",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "AI": {
+        "label": "Date d’expiration initiale",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      }
+    }
+  },
+  "AD": {
+    "label": null,
+    "strong": [
+      "60",
+      "62",
+      "69",
+      "D3",
+      "D4",
+      "E9",
+      "EB",
+      "EC",
+      "EE"
+    ],
+    "weak": [
+      "EA",
+      "ED",
+      "EF"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D3": {
+        "label": "Date de début de validité",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D4": {
+        "label": "Date de fin de validité",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "E9": {
+        "label": "N° Dossier",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "EA": {
+        "label": "Nature épreuve",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "EB": {
+        "label": "Matricule inspecteur",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "EC": {
+        "label": "Date examen",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "ED": {
+        "label": "Catégorie permis",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "EE": {
+        "label": "Codes spécifiques",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "EF": {
+        "label": "Visite médicale demandée",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "weak"
+      }
+    }
+  },
+  "AE": {
+    "label": "Certificat de décès V2",
+    "strong": [
+      "70",
+      "72",
+      "73",
+      "77",
+      "78",
+      "7M",
+      "7P"
+    ],
+    "weak": [
+      "7C",
+      "7D",
+      "7E",
+      "7G"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "70": {
+        "label": "Date et heure du décès",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "72": {
+        "label": "Nom du défunt",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "73": {
+        "label": "Prénoms du défunt",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "77": {
+        "label": "Commune de décès",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "78": {
+        "label": "Code postal de la commune de décès",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "7C": {
+        "label": "Obstacle médico-légal",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "7D": {
+        "label": "Mise en bière",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "7E": {
+        "label": "Obstacle aux soins de conservation",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "7G": {
+        "label": "Recherche de la cause du décès",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "7M": {
+        "label": "Identification du médecin",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "7P": {
+        "label": "Identifiant du certificat",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "B0": {
+    "label": "Diplôme",
+    "strong": [
+      "B1",
+      "B2",
+      "B7",
+      "BB",
+      "BH",
+      "BI",
+      "BJ"
+    ],
+    "weak": [
+      "B6",
+      "B9",
+      "BD",
+      "BG"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "B1": {
+        "label": "Prénom",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "B2": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "B6": {
+        "label": "Genre",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "B7": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "B9": {
+        "label": "Pays de naissance",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "BB": {
+        "label": "Numéro ou code d'identification de l'étudiant",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "BD": {
+        "label": "Niveau du diplôme selon la classification CEC",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "BG": {
+        "label": "Type de diplôme",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "BH": {
+        "label": "Domaine",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "BI": {
+        "label": "Mention",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "BJ": {
+        "label": "Spécialité",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "B1": {
+    "label": null,
+    "strong": [
+      "B2",
+      "B7",
+      "BB",
+      "BK"
+    ],
+    "weak": [],
+    "interchangeable_groups": [],
+    "fields": {
+      "B2": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "B7": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "BB": {
+        "label": "Numéro ou code d'identification de l'étudiant",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "BK": {
+        "label": "Numéro de l'Attestation de versement de la CVE",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "B2": {
+    "label": "Test COVID",
+    "strong": [
+      "F0",
+      "F1",
+      "F2",
+      "F4",
+      "F6"
+    ],
+    "weak": [
+      "F3",
+      "F5"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "F0": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "F1": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "F2": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "F3": {
+        "label": "Genre",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "F4": {
+        "label": "Code analyse",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "F5": {
+        "label": "Résultat de l’analyse",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "F6": {
+        "label": "Date et heure du prélèvement",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "C1": {
+    "label": "Renseignement Tarifaire Contraignant",
+    "strong": [
+      "D0",
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5"
+    ],
+    "weak": [
+      "D8"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "D0": {
+        "label": "Référence RTC",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D1": {
+        "label": "Nom du titulaire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D2": {
+        "label": "EORI",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D3": {
+        "label": "Date de début de validité",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D4": {
+        "label": "Date de fin de validité",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D5": {
+        "label": "Code marchandise",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D8": {
+        "label": "Durée de validité",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      }
+    }
+  },
+  "C2": {
+    "label": "Accord Préalable pour le transfert d’armes",
+    "strong": [
+      "D6",
+      "D7",
+      "DH",
+      "DI"
+    ],
+    "weak": [
+      "D8",
+      "DY"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "D6": {
+        "label": "Numéro de décision",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D7": {
+        "label": "Date de décision",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D8": {
+        "label": "Durée de validité",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "DH": {
+        "label": "EORI de l’expéditeur",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "DI": {
+        "label": "TIN de l’expéditeur",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "DY": {
+        "label": "Nombre de lignes articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      }
+    }
+  },
+  "C3": {
+    "label": "Autorisation d’importation de matériels",
+    "strong": [
+      "D6",
+      "D7",
+      "DH",
+      "DX"
+    ],
+    "weak": [
+      "D8",
+      "DY"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "D6": {
+        "label": "Numéro de décision",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D7": {
+        "label": "Date de décision",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D8": {
+        "label": "Durée de validité",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "DH": {
+        "label": "EORI de l’expéditeur",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "DX": {
+        "label": "TIN du destinataire",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "DY": {
+        "label": "Nombre de lignes articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      }
+    }
+  },
+  "C4": {
+    "label": null,
+    "strong": [
+      "D6",
+      "D7",
+      "DH",
+      "DI"
+    ],
+    "weak": [
+      "D8",
+      "DY"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "D6": {
+        "label": "Numéro de décision",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D7": {
+        "label": "Date de décision",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D8": {
+        "label": "Durée de validité",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "DH": {
+        "label": "EORI de l’expéditeur",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "DI": {
+        "label": "TIN de l’expéditeur",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "DY": {
+        "label": "Nombre de lignes articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      }
+    }
+  },
+  "C5": {
+    "label": "Licence d’exportation d’armes à feu",
+    "strong": [
+      "D7",
+      "D9",
+      "DA",
+      "DX"
+    ],
+    "weak": [
+      "DY"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "D7": {
+        "label": "Date de décision",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D9": {
+        "label": "Date de fin de validité de la licence",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "DA": {
+        "label": "Numéro de licence",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "DX": {
+        "label": "TIN du destinataire",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "DY": {
+        "label": "Nombre de lignes articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      }
+    }
+  },
+  "C6": {
+    "label": null,
+    "strong": [
+      "D6",
+      "D7",
+      "DH",
+      "DX"
+    ],
+    "weak": [
+      "D8",
+      "DY"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "D6": {
+        "label": "Numéro de décision",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D7": {
+        "label": "Date de décision",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "D8": {
+        "label": "Durée de validité",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "DH": {
+        "label": "EORI de l’expéditeur",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "DX": {
+        "label": "TIN du destinataire",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "DY": {
+        "label": "Nombre de lignes articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      }
+    }
+  },
+  "C7": {
+    "label": "Bon de livraison",
+    "strong": [
+      "DZ",
+      "H0",
+      "H2",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "HA",
+      "HB",
+      "HC"
+    ],
+    "weak": [
+      "DY",
+      "H1",
+      "H3"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "DY": {
+        "label": "Nombre de lignes articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "DZ": {
+        "label": "Numéro du bon de livraison",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "H0": {
+        "label": "Commune de l'expéditeur",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "H1": {
+        "label": "Pays de l'expéditeur",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "H2": {
+        "label": "Commune du destinataire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "H3": {
+        "label": "Pays du destinataire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "H4": {
+        "label": "Date de départ",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "H5": {
+        "label": "Date prévisionnelle d’arrivée",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "H6": {
+        "label": "Numéro de plomb",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "H7": {
+        "label": "Codes douaniers",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "H8": {
+        "label": "Nombre d’emballages articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "H9": {
+        "label": "Poids brut articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HA": {
+        "label": "Poids net articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HB": {
+        "label": "Valeur douanière articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HC": {
+        "label": "But de la livraison",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "C8": {
+    "label": "Bon de livraison V2",
+    "strong": [
+      "DI",
+      "DX",
+      "DZ",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "HA",
+      "HB",
+      "HC",
+      "HD",
+      "HE",
+      "HF",
+      "HG",
+      "HH"
+    ],
+    "weak": [
+      "DY",
+      "H1",
+      "H3"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "DI": {
+        "label": "TIN de l’expéditeur",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "DX": {
+        "label": "TIN du destinataire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "DY": {
+        "label": "Nombre de lignes articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "DZ": {
+        "label": "Numéro du bon de livraison",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "H1": {
+        "label": "Pays de l'expéditeur",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "H3": {
+        "label": "Pays du destinataire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "H4": {
+        "label": "Date de départ",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "H5": {
+        "label": "Date prévisionnelle d’arrivée",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "H6": {
+        "label": "Numéro de plomb",
+        "kind": "numeric",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "H7": {
+        "label": "Codes douaniers",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "H8": {
+        "label": "Nombre d’emballages articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "H9": {
+        "label": "Poids brut articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HA": {
+        "label": "Poids net articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HB": {
+        "label": "Valeur douanière articles",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HC": {
+        "label": "But de la livraison",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HD": {
+        "label": "Adresse de l'expéditeur",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HE": {
+        "label": "Code postal et commune de l'expéditeur",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HF": {
+        "label": "Adresse du destinataire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HG": {
+        "label": "Code postal et commune du destinataire",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "HH": {
+        "label": "Numéro d’identification du transport",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "C9": {
+    "label": "Caducée Infirmier",
+    "strong": [
+      "I1",
+      "I2",
+      "I3",
+      "I4",
+      "I5",
+      "I6"
+    ],
+    "weak": [
+      "I0"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "I0": {
+        "label": "Année du caducée",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "I1": {
+        "label": "Numéro ordinal",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "I2": {
+        "label": "Mention spécifique",
+        "kind": "text",
+        "obligation": "F",
+        "signal": "strong"
+      },
+      "I3": {
+        "label": "Nom d’exercice",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "I4": {
+        "label": "Prénom d’exercice",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "I5": {
+        "label": "Mode d’exercice",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "I6": {
+        "label": "Numéro RPPS",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      }
+    }
+  },
+  "L1": {
+    "label": "Attestation Vaccinale",
+    "strong": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L9"
+    ],
+    "weak": [
+      "L7",
+      "L8",
+      "LA"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "L0": {
+        "label": "Nom Patronymique du patient",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "L1": {
+        "label": "Liste des prénoms du patient",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "L2": {
+        "label": "Date de naissance du patient",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "L3": {
+        "label": "Nom de la maladie couverte",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "L4": {
+        "label": "Agent prophylactique",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "L5": {
+        "label": "Nom du vaccin",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "L6": {
+        "label": "Fabricant du vaccin",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "L7": {
+        "label": "Rang du dernier état de vaccination effectué",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "L8": {
+        "label": "Nombre de doses attendues pour un cycle complet",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "weak"
+      },
+      "L9": {
+        "label": "Date du dernier état du cycle de vaccination",
+        "kind": "numeric",
+        "obligation": "O",
+        "signal": "strong"
+      },
+      "LA": {
+        "label": "Etat du cycle de vaccination",
+        "kind": "text",
+        "obligation": "O",
+        "signal": "weak"
+      }
+    }
+  }
+}
