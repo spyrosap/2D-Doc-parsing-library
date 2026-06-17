@@ -1,0 +1,2665 @@
+{
+  "00": {
+    "label": "Factures de fournisseur d’énergie",
+    "grep": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "interchangeable_groups": [
+      [
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    ],
+    "fields": {
+      "10": {
+        "label": "Ligne 1 de la norme adresse postale du bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "11": {
+        "label": "Qualité et/ou titre de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "12": {
+        "label": "Prénom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "13": {
+        "label": "Nom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "20": {
+        "label": "Ligne 2 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "21": {
+        "label": "Ligne 3 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "22": {
+        "label": "Ligne 4 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "23": {
+        "label": "Ligne 5 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "24": {
+        "label": "Code postal ou code cedex du point de service des prestations",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "25": {
+        "label": "Localité de destination ou libellé cedex du point de service des prestations",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "01": {
+    "label": "Factures de fournisseur d’accès internet",
+    "grep": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "18",
+      "19",
+      "1A",
+      "1B",
+      "1C",
+      "1D",
+      "1E",
+      "1F",
+      "22",
+      "24"
+    ],
+    "interchangeable_groups": [
+      [
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    ],
+    "fields": {
+      "10": {
+        "label": "Ligne 1 de la norme adresse postale du bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "11": {
+        "label": "Qualité et/ou titre de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "12": {
+        "label": "Prénom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "13": {
+        "label": "Nom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "18": {
+        "label": "Numéro de la facture",
+        "kind": "text",
+        "obligation": "F"
+      },
+      "19": {
+        "label": "Numéro de client",
+        "kind": "text",
+        "obligation": "F"
+      },
+      "1A": {
+        "label": "Numéro du contrat",
+        "kind": "text",
+        "obligation": "F"
+      },
+      "1B": {
+        "label": "Identifiant du souscripteur du contrat",
+        "kind": "text",
+        "obligation": "F"
+      },
+      "1C": {
+        "label": "Date d’effet du contrat",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "1D": {
+        "label": "Montant TTC de la facture",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "1E": {
+        "label": "Numéro de téléphone du bénéficiaire de la prestation",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "1F": {
+        "label": "Numéro de téléphone du destinataire de la facture",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "22": {
+        "label": "Ligne 4 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "24": {
+        "label": "Code postal ou code cedex du point de service des prestations",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "02": {
+    "label": "Avis de taxe d’habitation",
+    "grep": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "22",
+      "24",
+      "25"
+    ],
+    "interchangeable_groups": [
+      [
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    ],
+    "fields": {
+      "10": {
+        "label": "Ligne 1 de la norme adresse postale du bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "11": {
+        "label": "Qualité et/ou titre de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "12": {
+        "label": "Prénom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "13": {
+        "label": "Nom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "22": {
+        "label": "Ligne 4 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "24": {
+        "label": "Code postal ou code cedex du point de service des prestations",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "25": {
+        "label": "Localité de destination ou libellé cedex du point de service des prestations",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "03": {
+    "label": "Relevé d’identité bancaire.",
+    "grep": [
+      "30",
+      "31",
+      "32"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "30": {
+        "label": "Qualité Nom et Prénom.",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "31": {
+        "label": "Code IBAN",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "32": {
+        "label": "Code BIC/SWIFT",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "04": {
+    "label": "Avis d’impôt sur les revenus",
+    "grep": [
+      "41",
+      "43",
+      "44",
+      "46",
+      "47",
+      "49",
+      "4A"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "41": {
+        "label": "Revenu fiscal de référence",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "43": {
+        "label": "Nombre de parts",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "44": {
+        "label": "Référence d’avis d’impôt",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "46": {
+        "label": "Déclarant 1",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "47": {
+        "label": "Numéro fiscal du déclarant 1",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "49": {
+        "label": "Numéro fiscal du déclarant 2",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "4A": {
+        "label": "Date de mise en recouvrement",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "05": {
+    "label": "Relevé d’Identité SEPAmail",
+    "grep": [
+      "30",
+      "35"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "30": {
+        "label": "Qualité Nom et Prénom.",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "35": {
+        "label": "Identifiant SEPAmail (QXBAN)",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "06": {
+    "label": "Bulletin de salaire",
+    "grep": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "53",
+      "54",
+      "55",
+      "57",
+      "58",
+      "59",
+      "5A"
+    ],
+    "interchangeable_groups": [
+      [
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    ],
+    "fields": {
+      "10": {
+        "label": "Ligne 1 de la norme adresse postale du bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "11": {
+        "label": "Qualité et/ou titre de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "12": {
+        "label": "Prénom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "13": {
+        "label": "Nom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "53": {
+        "label": "Début de période",
+        "kind": "date_days2000",
+        "obligation": "O"
+      },
+      "54": {
+        "label": "Fin de période",
+        "kind": "date_days2000",
+        "obligation": "O"
+      },
+      "55": {
+        "label": "Date de début de contrat",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "57": {
+        "label": "Date de signature du contrat",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "58": {
+        "label": "Salaire net imposable",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "59": {
+        "label": "Cumul du salaire net imposable",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "5A": {
+        "label": "Salaire brut du mois",
+        "kind": "numeric",
+        "obligation": "F"
+      }
+    }
+  },
+  "07": {
+    "label": "Titre d’identité",
+    "grep": [
+      "60",
+      "62",
+      "66",
+      "69",
+      "6N",
+      "6O"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "66": {
+        "label": "Numéro de la pièce d’identité",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "6N": {
+        "label": "Date de début de validité",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "6O": {
+        "label": "Date de fin de validité",
+        "kind": "numeric",
+        "obligation": "F"
+      }
+    }
+  },
+  "08": {
+    "label": "MRZ",
+    "grep": [
+      "6F"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "6F": {
+        "label": "Machine Readable Zone (Zone de Lecture Automatique, ZLA)",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "09": {
+    "label": "Facture étendue",
+    "grep": [
+      "10",
+      "11",
+      "12",
+      "13",
+      "22",
+      "24"
+    ],
+    "interchangeable_groups": [
+      [
+        "10",
+        "11",
+        "12",
+        "13"
+      ]
+    ],
+    "fields": {
+      "10": {
+        "label": "Ligne 1 de la norme adresse postale du bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "11": {
+        "label": "Qualité et/ou titre de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "12": {
+        "label": "Prénom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "13": {
+        "label": "Nom de la personne bénéficiaire de la prestation",
+        "kind": "text",
+        "obligation": "O*"
+      },
+      "22": {
+        "label": "Ligne 4 de la norme adresse postale du point de service des prestations",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "24": {
+        "label": "Code postal ou code cedex du point de service des prestations",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "10": {
+    "label": "Contrat de travail",
+    "grep": [
+      "55",
+      "57",
+      "58",
+      "59",
+      "5A",
+      "61",
+      "62"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "55": {
+        "label": "Date de début de contrat",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "57": {
+        "label": "Date de signature du contrat",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "58": {
+        "label": "Salaire net imposable",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "59": {
+        "label": "Cumul du salaire net imposable",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "5A": {
+        "label": "Salaire brut du mois",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "61": {
+        "label": "Prénom",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "11": {
+    "label": "Relevé de compte",
+    "grep": [
+      "30",
+      "31",
+      "32",
+      "35",
+      "36",
+      "37",
+      "38"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "30": {
+        "label": "Qualité Nom et Prénom.",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "31": {
+        "label": "Code IBAN",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "32": {
+        "label": "Code BIC/SWIFT",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "35": {
+        "label": "Identifiant SEPAmail (QXBAN)",
+        "kind": "text",
+        "obligation": "F"
+      },
+      "36": {
+        "label": "Date de début de période",
+        "kind": "date_days2000",
+        "obligation": "O"
+      },
+      "37": {
+        "label": "Date de fin de période",
+        "kind": "date_days2000",
+        "obligation": "O"
+      },
+      "38": {
+        "label": "Solde compte début de période",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "12": {
+    "label": "Acte d’huissier",
+    "grep": [
+      "90",
+      "92",
+      "94",
+      "95",
+      "96"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "90": {
+        "label": "Identité de l'huissier de justice",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "92": {
+        "label": "Identité ou raison sociale du destinataire",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "94": {
+        "label": "Intitulé de l'acte",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "95": {
+        "label": "Numéro de l'acte",
+        "kind": "text",
+        "obligation": "F"
+      },
+      "96": {
+        "label": "Date de signature de l'acte",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "13": {
+    "label": "Document étranger",
+    "grep": [
+      "60",
+      "62",
+      "63",
+      "66",
+      "69",
+      "6A",
+      "6K",
+      "6L",
+      "6N",
+      "6O",
+      "6P",
+      "6Q",
+      "6R",
+      "6U",
+      "6W",
+      "6X"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "63": {
+        "label": "Nom d’usage",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "66": {
+        "label": "Numéro de la pièce d’identité",
+        "kind": "text",
+        "obligation": "F"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "6A": {
+        "label": "Lieu de naissance",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6K": {
+        "label": "Numéro de la demande de document étranger",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "6L": {
+        "label": "Date de dépôt de la demande",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6N": {
+        "label": "Date de début de validité",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "6O": {
+        "label": "Date de fin de validité",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "6P": {
+        "label": "Autorisation",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6Q": {
+        "label": "Numéro d’étranger",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6R": {
+        "label": "Numéro de visa",
+        "kind": "text",
+        "obligation": "F"
+      },
+      "6U": {
+        "label": "Ligne 4 de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6W": {
+        "label": "Code postal ou code cedex de l'adresse postale du domicile",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "6X": {
+        "label": "Commune de l'adresse postale du domicile",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "14": {
+    "label": "Attestation DICEM",
+    "grep": [
+      "60",
+      "62",
+      "A2",
+      "AO",
+      "AP",
+      "AQ",
+      "AS",
+      "AW",
+      "AY",
+      "AZ"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "A2": {
+        "label": "Marque du véhicule.",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AO": {
+        "label": "Numéro d’identification",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "AP": {
+        "label": "Type d’engin",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AQ": {
+        "label": "Numéro de série",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AS": {
+        "label": "Couleur dominante",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AW": {
+        "label": "Ligne 4 de l'adresse postale du propriétaire",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AY": {
+        "label": "Code postal ou code cedex de l'adresse postale du propriétaire",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "AZ": {
+        "label": "Commune de l'adresse postale du propriétaire",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "15": {
+    "label": "Autorisation de Travail – AES Métier en",
+    "grep": [
+      "55",
+      "5N",
+      "5Q",
+      "5R",
+      "5S",
+      "61",
+      "62",
+      "66",
+      "69",
+      "6A",
+      "6L",
+      "6Z"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "55": {
+        "label": "Date de début de contrat",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "5N": {
+        "label": "Numéro de dossier d'autorisation de travail",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "5Q": {
+        "label": "Nom du déclarant",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "5R": {
+        "label": "Prénom du déclarant",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "5S": {
+        "label": "Fonction du déclarant",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "61": {
+        "label": "Prénom",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "66": {
+        "label": "Numéro de la pièce d’identité",
+        "kind": "text",
+        "obligation": "F"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "6A": {
+        "label": "Lieu de naissance",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6L": {
+        "label": "Date de dépôt de la demande",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6Z": {
+        "label": "Numéro d'étranger de l'autorisation de travail",
+        "kind": "text",
+        "obligation": "F"
+      }
+    }
+  },
+  "16": {
+    "label": "Attestation de Demande d’Asile",
+    "grep": [
+      "60",
+      "62",
+      "69",
+      "6O",
+      "6Q",
+      "G2"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "6O": {
+        "label": "Date de fin de validité",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "6Q": {
+        "label": "Numéro d’étranger",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "G2": {
+        "label": "Numéro d’usager",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "17": {
+    "label": null,
+    "grep": [
+      "60",
+      "69",
+      "6G",
+      "6H",
+      "6Q",
+      "G3",
+      "G4",
+      "G5"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "6G": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6H": {
+        "label": "Civilité",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6Q": {
+        "label": "Numéro d’étranger",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "G3": {
+        "label": "Date de fin des droits",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "G4": {
+        "label": "Somme des montants versés au titre de l'ADA",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "G5": {
+        "label": "Information de la Direction Territoriale",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "18": {
+    "label": "Avis de Situation Déclarative à l'Impôt sur",
+    "grep": [
+      "41",
+      "43",
+      "44",
+      "46",
+      "47",
+      "49",
+      "4B"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "41": {
+        "label": "Revenu fiscal de référence",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "43": {
+        "label": "Nombre de parts",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "44": {
+        "label": "Référence d’avis d’impôt",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "46": {
+        "label": "Déclarant 1",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "47": {
+        "label": "Numéro fiscal du déclarant 1",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "49": {
+        "label": "Numéro fiscal du déclarant 2",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "4B": {
+        "label": "Date de la déclaration",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "19": {
+    "label": "Déclarations de dons",
+    "grep": [
+      "4C",
+      "4D",
+      "4E",
+      "4F",
+      "4G",
+      "4H",
+      "4I"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "4C": {
+        "label": "Date d’enregistrement",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "4D": {
+        "label": "Montant du don (en €)",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "4E": {
+        "label": "Montant des droits payés (en €)",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "4F": {
+        "label": "Référence d’enregistrement",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "4G": {
+        "label": "Nom du donataire",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "4H": {
+        "label": "Nom(s) du(es) donateur(s)",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "4I": {
+        "label": "Montant Taxable (en €)",
+        "kind": "numeric",
+        "obligation": "F"
+      }
+    }
+  },
+  "20": {
+    "label": "Déclarations de cession de droits sociaux",
+    "grep": [
+      "4C",
+      "4E",
+      "4F",
+      "4J",
+      "4K",
+      "4L"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "4C": {
+        "label": "Date d’enregistrement",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "4E": {
+        "label": "Montant des droits payés (en €)",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "4F": {
+        "label": "Référence d’enregistrement",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "4J": {
+        "label": "Montant de la cession (en €)",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "4K": {
+        "label": "Nom du cessionnaire",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "4L": {
+        "label": "Nom du cédant",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "21": {
+    "label": "Attestation 2041-ASK",
+    "grep": [
+      "4N",
+      "4O",
+      "4P",
+      "4Q",
+      "4R",
+      "55"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "4N": {
+        "label": "Nom et prénoms du déclarant",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "4O": {
+        "label": "Adresse du déclarant",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "4P": {
+        "label": "Code postal du déclarant",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "4Q": {
+        "label": "Commune du déclarant",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "4R": {
+        "label": "SIP gestionnaire",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "55": {
+        "label": "Date de début de contrat",
+        "kind": "numeric",
+        "obligation": "F"
+      }
+    }
+  },
+  "22": {
+    "label": "Carte Européenne d’Arme à Feu (CEAF)",
+    "grep": [
+      "60",
+      "69",
+      "6A",
+      "6G",
+      "HI",
+      "HJ",
+      "HK",
+      "HM",
+      "HN",
+      "HO",
+      "HP"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "6A": {
+        "label": "Lieu de naissance",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6G": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "HI": {
+        "label": "Numéro, extension et libellé de voie de l'adresse de résidence",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "HJ": {
+        "label": "Code postal de l'adresse de résidence",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "HK": {
+        "label": "Commune de l'adresse de résidence",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "HM": {
+        "label": "Numéro de la CEAF",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "HN": {
+        "label": "Date et heure d'édition",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "HO": {
+        "label": "Date d'expiration",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "HP": {
+        "label": "Numéro SIA",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "23": {
+    "label": "Certificat de Preuve de Vie",
+    "grep": [
+      "60",
+      "69",
+      "87",
+      "88",
+      "8A",
+      "8B",
+      "8C",
+      "8I"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "87": {
+        "label": "Assuré - Nom patronymique",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "88": {
+        "label": "Assuré - Identifiant",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "8A": {
+        "label": "Assuré – Date de début de campagne",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "8B": {
+        "label": "Assuré – Identifiant enquête MCE",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "8C": {
+        "label": "Vie – Identifiant du certificat d’existence",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "8I": {
+        "label": "SMR – Date de mise en concubinage",
+        "kind": "numeric",
+        "obligation": "F"
+      }
+    }
+  },
+  "24": {
+    "label": null,
+    "grep": [
+      "41",
+      "43",
+      "44",
+      "46",
+      "47",
+      "49",
+      "4B",
+      "4V",
+      "4W",
+      "4X"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "41": {
+        "label": "Revenu fiscal de référence",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "43": {
+        "label": "Nombre de parts",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "44": {
+        "label": "Référence d’avis d’impôt",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "46": {
+        "label": "Déclarant 1",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "47": {
+        "label": "Numéro fiscal du déclarant 1",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "49": {
+        "label": "Numéro fiscal du déclarant 2",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "4B": {
+        "label": "Date de la déclaration",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "4V": {
+        "label": "Impôt sur le revenu net",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "4W": {
+        "label": "Reste à payer",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "4X": {
+        "label": "Retenue à la source",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "25": {
+    "label": null,
+    "grep": [
+      "57",
+      "5A",
+      "5S",
+      "62",
+      "66",
+      "69",
+      "6A"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "57": {
+        "label": "Date de signature du contrat",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "5A": {
+        "label": "Salaire brut du mois",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "5S": {
+        "label": "Fonction du déclarant",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "66": {
+        "label": "Numéro de la pièce d’identité",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "6A": {
+        "label": "Lieu de naissance",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "A0": {
+    "label": "Certificat de qualité de l’air",
+    "grep": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "AA"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "A1": {
+        "label": "Immatriculation du véhicule",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "A2": {
+        "label": "Marque du véhicule.",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "A3": {
+        "label": "Nom commercial du véhicule.",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "A4": {
+        "label": "Numéro de série du véhicule (VIN).",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AA": {
+        "label": "Date de première immatriculation du véhicule.",
+        "kind": "numeric",
+        "obligation": "F"
+      }
+    }
+  },
+  "A1": {
+    "label": "Courrier Permis à Points",
+    "grep": [
+      "60",
+      "6G",
+      "6H",
+      "AB",
+      "AC"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6G": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6H": {
+        "label": "Civilité",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AB": {
+        "label": "Type de lettre",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AC": {
+        "label": "N° Dossier",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "A2": {
+    "label": "Carte Mobilité Inclusion (CMI)",
+    "grep": [
+      "AH",
+      "AI"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "AH": {
+        "label": "Numéro de la carte",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AI": {
+        "label": "Date d’expiration initiale",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "A3": {
+    "label": "Carte T3P",
+    "grep": [
+      "A1",
+      "AJ",
+      "AK"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "A1": {
+        "label": "Immatriculation du véhicule",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AJ": {
+        "label": "Numéro EVTC",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AK": {
+        "label": "Numéro de macaron",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "A4": {
+    "label": "Certificat de décès",
+    "grep": [
+      "70",
+      "72",
+      "73",
+      "77",
+      "78",
+      "7K",
+      "7M"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "70": {
+        "label": "Date et heure du décès",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "72": {
+        "label": "Nom du défunt",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "73": {
+        "label": "Prénoms du défunt",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "77": {
+        "label": "Commune de décès",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "78": {
+        "label": "Code postal de la commune de décès",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "7K": {
+        "label": "Code NNC",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "7M": {
+        "label": "Identification du médecin",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "A5": {
+    "label": null,
+    "grep": [
+      "AI",
+      "AL"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "AI": {
+        "label": "Date d’expiration initiale",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "AL": {
+        "label": "Numéro de la carte",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "A6": {
+    "label": "Carte Professionnelle Sapeur-Pompier",
+    "grep": [
+      "80",
+      "81",
+      "82",
+      "83",
+      "86"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "80": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "81": {
+        "label": "Prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "82": {
+        "label": "Numéro de carte",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "83": {
+        "label": "Organisme de tutelle",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "86": {
+        "label": "Numéro de licence",
+        "kind": "text",
+        "obligation": "F"
+      }
+    }
+  },
+  "A7": {
+    "label": "Certificat de qualité de l’air (V2)",
+    "grep": [
+      "A1",
+      "A2",
+      "A4",
+      "AA",
+      "AM"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "A1": {
+        "label": "Immatriculation du véhicule",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "A2": {
+        "label": "Marque du véhicule.",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "A4": {
+        "label": "Numéro de série du véhicule (VIN).",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AA": {
+        "label": "Date de première immatriculation du véhicule.",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "AM": {
+        "label": "Motif de sur-classement",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "A8": {
+    "label": "Certificat de cession électronique",
+    "grep": [
+      "A1",
+      "A4",
+      "AA",
+      "AN",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "CA",
+      "CB",
+      "CC"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "A1": {
+        "label": "Immatriculation du véhicule",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "A4": {
+        "label": "Numéro de série du véhicule (VIN).",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AA": {
+        "label": "Date de première immatriculation du véhicule.",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "AN": {
+        "label": "Kilométrage",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "C1": {
+        "label": "Nom patronymique du vendeur",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "C2": {
+        "label": "Prénom du vendeur",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "C3": {
+        "label": "Date et heure de la cession",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "C4": {
+        "label": "Date de la signature du vendeur",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "C6": {
+        "label": "Nom patronymique de l’acheteur",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "C7": {
+        "label": "Prénom de l’acheteur",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "C8": {
+        "label": "Ligne 4 de la norme adresse postale du domicile de l’acheteur",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "C9": {
+        "label": "Code postal ou code cedex du domicile de l’acheteur",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "CA": {
+        "label": "Commune du domicile de l’acheteur",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "CB": {
+        "label": "N° d’enregistrement",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "CC": {
+        "label": "Date et heure d'enregistrement dans le SIV",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "A9": {
+    "label": "Permis de chasser",
+    "grep": [
+      "69",
+      "80",
+      "81",
+      "85",
+      "86"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "80": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "81": {
+        "label": "Prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "85": {
+        "label": "Numéro de permis de chasser",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "86": {
+        "label": "Numéro de licence",
+        "kind": "text",
+        "obligation": "F"
+      }
+    }
+  },
+  "AA": {
+    "label": "Arrêtés Permis de conduire",
+    "grep": [
+      "60",
+      "69",
+      "6A",
+      "6G",
+      "6H",
+      "AC",
+      "AD",
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "6A": {
+        "label": "Lieu de naissance",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6G": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6H": {
+        "label": "Civilité",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AC": {
+        "label": "N° Dossier",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AD": {
+        "label": "Date Infraction",
+        "kind": "date_days2000",
+        "obligation": "F"
+      },
+      "E1": {
+        "label": "Date édition du document",
+        "kind": "date_days2000",
+        "obligation": "O"
+      },
+      "E2": {
+        "label": "Date de fin de sanction",
+        "kind": "date_days2000",
+        "obligation": "F"
+      },
+      "E3": {
+        "label": "Date de notification",
+        "kind": "date_days2000",
+        "obligation": "F"
+      }
+    }
+  },
+  "AB": {
+    "label": "Relevé d’Information Permis de conduire",
+    "grep": [
+      "60",
+      "69",
+      "6A",
+      "6G",
+      "6H",
+      "AC",
+      "E8"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "6A": {
+        "label": "Lieu de naissance",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6G": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "6H": {
+        "label": "Civilité",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AC": {
+        "label": "N° Dossier",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "E8": {
+        "label": "Date des données issues du SNCP",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "AC": {
+    "label": "Licence de conducteur de train",
+    "grep": [
+      "80",
+      "81",
+      "82",
+      "86",
+      "AI"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "80": {
+        "label": "Nom",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "81": {
+        "label": "Prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "82": {
+        "label": "Numéro de carte",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "86": {
+        "label": "Numéro de licence",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "AI": {
+        "label": "Date d’expiration initiale",
+        "kind": "numeric",
+        "obligation": "F"
+      }
+    }
+  },
+  "AD": {
+    "label": null,
+    "grep": [
+      "60",
+      "62",
+      "69",
+      "D3",
+      "D4",
+      "E9",
+      "EB",
+      "EC"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "60": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "62": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "69": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "D3": {
+        "label": "Date de début de validité",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "D4": {
+        "label": "Date de fin de validité",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "E9": {
+        "label": "N° Dossier",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "EB": {
+        "label": "Matricule inspecteur",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "EC": {
+        "label": "Date examen",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "AE": {
+    "label": "Certificat de décès V2",
+    "grep": [
+      "70",
+      "72",
+      "73",
+      "77",
+      "78",
+      "7M",
+      "7P"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "70": {
+        "label": "Date et heure du décès",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "72": {
+        "label": "Nom du défunt",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "73": {
+        "label": "Prénoms du défunt",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "77": {
+        "label": "Commune de décès",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "78": {
+        "label": "Code postal de la commune de décès",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "7M": {
+        "label": "Identification du médecin",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "7P": {
+        "label": "Identifiant du certificat",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "B0": {
+    "label": "Diplôme",
+    "grep": [
+      "B1",
+      "B2",
+      "B7",
+      "BB",
+      "BH",
+      "BI",
+      "BJ"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "B1": {
+        "label": "Prénom",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "B2": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "B7": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "BB": {
+        "label": "Numéro ou code d'identification de l'étudiant",
+        "kind": "text",
+        "obligation": "F"
+      },
+      "BH": {
+        "label": "Domaine",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "BI": {
+        "label": "Mention",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "BJ": {
+        "label": "Spécialité",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "B1": {
+    "label": null,
+    "grep": [
+      "B2",
+      "B7",
+      "BB",
+      "BK"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "B2": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "B7": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "BB": {
+        "label": "Numéro ou code d'identification de l'étudiant",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "BK": {
+        "label": "Numéro de l'Attestation de versement de la CVE",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "B2": {
+    "label": "Test COVID",
+    "grep": [
+      "F0",
+      "F1",
+      "F2",
+      "F4",
+      "F6"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "F0": {
+        "label": "Liste des prénoms",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "F1": {
+        "label": "Nom patronymique",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "F2": {
+        "label": "Date de naissance",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "F4": {
+        "label": "Code analyse",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "F6": {
+        "label": "Date et heure du prélèvement",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "C1": {
+    "label": "Renseignement Tarifaire Contraignant",
+    "grep": [
+      "D0",
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "D0": {
+        "label": "Référence RTC",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "D1": {
+        "label": "Nom du titulaire",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "D2": {
+        "label": "EORI",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "D3": {
+        "label": "Date de début de validité",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "D4": {
+        "label": "Date de fin de validité",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "D5": {
+        "label": "Code marchandise",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "C2": {
+    "label": "Accord Préalable pour le transfert d’armes",
+    "grep": [
+      "D6",
+      "D7"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "D6": {
+        "label": "Numéro de décision",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "D7": {
+        "label": "Date de décision",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "C3": {
+    "label": "Autorisation d’importation de matériels",
+    "grep": [
+      "D6",
+      "D7"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "D6": {
+        "label": "Numéro de décision",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "D7": {
+        "label": "Date de décision",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "C4": {
+    "label": null,
+    "grep": [
+      "D6",
+      "D7"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "D6": {
+        "label": "Numéro de décision",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "D7": {
+        "label": "Date de décision",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "C5": {
+    "label": "Licence d’exportation d’armes à feu",
+    "grep": [
+      "D7",
+      "D9",
+      "DA"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "D7": {
+        "label": "Date de décision",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "D9": {
+        "label": "Date de fin de validité de la licence",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "DA": {
+        "label": "Numéro de licence",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "C6": {
+    "label": null,
+    "grep": [
+      "D6",
+      "D7"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "D6": {
+        "label": "Numéro de décision",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "D7": {
+        "label": "Date de décision",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "C7": {
+    "label": "Bon de livraison",
+    "grep": [
+      "DZ",
+      "H0",
+      "H2",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "HA",
+      "HB",
+      "HC"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "DZ": {
+        "label": "Numéro du bon de livraison",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "H0": {
+        "label": "Commune de l'expéditeur",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "H2": {
+        "label": "Commune du destinataire",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "H4": {
+        "label": "Date de départ",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "H5": {
+        "label": "Date prévisionnelle d’arrivée",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "H6": {
+        "label": "Numéro de plomb",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "H7": {
+        "label": "Codes douaniers",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "H8": {
+        "label": "Nombre d’emballages articles",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "H9": {
+        "label": "Poids brut articles",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "HA": {
+        "label": "Poids net articles",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "HB": {
+        "label": "Valeur douanière articles",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "HC": {
+        "label": "But de la livraison",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "C8": {
+    "label": "Bon de livraison V2",
+    "grep": [
+      "DI",
+      "DX",
+      "DZ",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "HA",
+      "HB",
+      "HC",
+      "HD",
+      "HE",
+      "HF",
+      "HG",
+      "HH"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "DI": {
+        "label": "TIN de l’expéditeur",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "DX": {
+        "label": "TIN du destinataire",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "DZ": {
+        "label": "Numéro du bon de livraison",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "H4": {
+        "label": "Date de départ",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "H5": {
+        "label": "Date prévisionnelle d’arrivée",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "H6": {
+        "label": "Numéro de plomb",
+        "kind": "numeric",
+        "obligation": "F"
+      },
+      "H7": {
+        "label": "Codes douaniers",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "H8": {
+        "label": "Nombre d’emballages articles",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "H9": {
+        "label": "Poids brut articles",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "HA": {
+        "label": "Poids net articles",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "HB": {
+        "label": "Valeur douanière articles",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "HC": {
+        "label": "But de la livraison",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "HD": {
+        "label": "Adresse de l'expéditeur",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "HE": {
+        "label": "Code postal et commune de l'expéditeur",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "HF": {
+        "label": "Adresse du destinataire",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "HG": {
+        "label": "Code postal et commune du destinataire",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "HH": {
+        "label": "Numéro d’identification du transport",
+        "kind": "text",
+        "obligation": "O"
+      }
+    }
+  },
+  "C9": {
+    "label": "Caducée Infirmier",
+    "grep": [
+      "I1",
+      "I3",
+      "I4",
+      "I5",
+      "I6"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "I1": {
+        "label": "Numéro ordinal",
+        "kind": "numeric",
+        "obligation": "O"
+      },
+      "I3": {
+        "label": "Nom d’exercice",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "I4": {
+        "label": "Prénom d’exercice",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "I5": {
+        "label": "Mode d’exercice",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "I6": {
+        "label": "Numéro RPPS",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  },
+  "L1": {
+    "label": "Attestation Vaccinale",
+    "grep": [
+      "L0",
+      "L1",
+      "L2",
+      "L3",
+      "L4",
+      "L5",
+      "L6",
+      "L9"
+    ],
+    "interchangeable_groups": [],
+    "fields": {
+      "L0": {
+        "label": "Nom Patronymique du patient",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "L1": {
+        "label": "Liste des prénoms du patient",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "L2": {
+        "label": "Date de naissance du patient",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "L3": {
+        "label": "Nom de la maladie couverte",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "L4": {
+        "label": "Agent prophylactique",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "L5": {
+        "label": "Nom du vaccin",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "L6": {
+        "label": "Fabricant du vaccin",
+        "kind": "text",
+        "obligation": "O"
+      },
+      "L9": {
+        "label": "Date du dernier état du cycle de vaccination",
+        "kind": "numeric",
+        "obligation": "O"
+      }
+    }
+  }
+}
